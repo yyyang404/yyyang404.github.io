@@ -442,6 +442,10 @@ hr {
   padding: 8px 0;
 }
 
+.detail-grid td:first-child {
+  padding-left: 10px;
+}
+
 .detail-title {
   color: #111111;
   font-family: var(--font-heading);
@@ -489,6 +493,18 @@ hr {
   font-family: var(--font-ui);
   font-size: 13px;
   text-align: center;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 @media (max-width: 760px) {
