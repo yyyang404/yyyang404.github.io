@@ -543,27 +543,6 @@ hr {
     padding-left: 0;
   }
 
-  .detail-grid,
-  .detail-grid tbody,
-  .detail-grid tr,
-  .detail-grid td {
-    display: block;
-    width: 100% !important;
-  }
-
-  .detail-grid td:first-child {
-    padding-bottom: 2px;
-  }
-
-  .detail-grid .detail-copy {
-    padding-top: 0;
-    padding-left: 10px;
-  }
-
-  .detail-grid .entry-date {
-    white-space: normal;
-  }
-
   .media-stack {
     grid-template-columns: 1fr;
   }
