@@ -458,6 +458,10 @@ hr {
   white-space: nowrap;
 }
 
+.mobile-date-break {
+  display: none;
+}
+
 .detail-copy {
   padding-left: 14px;
 }
@@ -541,6 +545,40 @@ hr {
 
   .detail-copy {
     padding-left: 0;
+  }
+
+  .detail-grid,
+  .detail-grid tbody {
+    display: block;
+  }
+
+  .detail-grid .detail-item {
+    display: grid;
+    grid-template-columns: 92px minmax(0, 1fr);
+    column-gap: 26px;
+    width: 100%;
+  }
+
+  .detail-grid .detail-item + .detail-item {
+    margin-top: 16px;
+  }
+
+  .detail-grid td,
+  .detail-grid td:first-child {
+    display: block;
+    width: auto !important;
+    padding: 0;
+  }
+
+  .entry-date {
+    display: block;
+    max-width: 92px;
+    line-height: 1.35;
+    white-space: normal;
+  }
+
+  .mobile-date-break {
+    display: revert;
   }
 
   .media-stack {
