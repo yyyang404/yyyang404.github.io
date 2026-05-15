@@ -513,7 +513,7 @@ hr {
 
 @media (max-width: 760px) {
   .page-shell {
-    width: min(920px, calc(100% - 20px));
+    width: min(920px, calc(100% - 48px));
     padding-top: 18px;
   }
 
