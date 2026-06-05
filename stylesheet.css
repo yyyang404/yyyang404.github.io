@@ -64,7 +64,7 @@
 
 :root {
   --font-body: "XCharterWeb", serif;
-  --font-heading: "Lucida Grande", sans-serif;
+  --font-heading: "Product Sans", sans-serif;
   --font-ui: "CarlitoWeb", sans-serif;
   --paper-meta-gap: 0px;
   --text: #202124;
@@ -196,7 +196,7 @@ hr {
   width: 100%;
   max-width: 260px;
   margin: 0 auto;
-  border-radius: 16px;
+  border-radius: 10px;
 }
 
 .intro-copy > p:first-child {
