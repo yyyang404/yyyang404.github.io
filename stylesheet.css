@@ -64,7 +64,7 @@
 
 :root {
   --font-body: "XCharterWeb", serif;
-  --font-heading: "Product Sans", sans-serif;
+  --font-heading: "Product Sans", "CarlitoWeb", sans-serif;
   --font-ui: "CarlitoWeb", sans-serif;
   --paper-meta-gap: 0px;
   --text: #202124;
