@@ -459,6 +459,15 @@ hr {
   font-size: 13px;
 }
 
+.award-note {
+  color: #c62828;
+}
+
+.pub-item .award-note {
+  font-family: var(--font-ui);
+  font-size: 14px;
+}
+
 .opportunity-note {
   color: #8d2a1b;
   font-family: var(--font-ui);
