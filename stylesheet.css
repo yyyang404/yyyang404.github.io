@@ -72,6 +72,7 @@
   --accent: #1a5fb4;
   --accent-hover: #c46a00;
   --card: #f6f6f6;
+  --claude-background: #faf9f5;
   --paper-1: linear-gradient(135deg, #173a63, #245a8a);
   --paper-2: linear-gradient(135deg, #355c7d, #6c5b7b);
   --paper-3: linear-gradient(135deg, #5e3a87, #934f9c);
@@ -86,7 +87,8 @@ html {
 
 body {
   margin: 0;
-  background: #ffffff;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #ffffff 0%, var(--claude-background) 100%);
   color: var(--text);
 }
 
@@ -145,6 +147,15 @@ heading {
   line-height: 1.35;
 }
 
+.paper-title-split .paper-title-name,
+.paper-title-split .paper-title-subtitle {
+  display: block;
+}
+
+.paper-title-split .paper-title-subtitle {
+  margin-top: -0.12em;
+}
+
 papertitle {
   font-size: 16px;
   font-weight: 700;
@@ -163,7 +174,7 @@ hr {
 }
 
 .page-shell {
-  width: min(920px, calc(100% - 32px));
+  width: min(960px, calc(100% - 32px));
   margin: 0 auto;
   padding: 24px 0 48px;
 }
@@ -573,7 +584,7 @@ hr {
 
 @media (max-width: 760px) {
   .page-shell {
-    width: min(920px, calc(100% - 48px));
+    width: min(960px, calc(100% - 48px));
     padding-top: 18px;
   }
 
