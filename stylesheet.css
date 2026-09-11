@@ -3,7 +3,7 @@
   src: url("assets/fonts/xcharter/XCharter-Roman.otf") format("opentype");
   font-weight: 400;
   font-style: normal;
-  font-display: swap;
+  font-display: optional;
 }
 
 @font-face {
@@ -11,23 +11,7 @@
   src: url("assets/fonts/xcharter/XCharter-Italic.otf") format("opentype");
   font-weight: 400;
   font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "XCharterWeb";
-  src: url("assets/fonts/xcharter/XCharter-Bold.otf") format("opentype");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "XCharterWeb";
-  src: url("assets/fonts/xcharter/XCharter-BoldItalic.otf") format("opentype");
-  font-weight: 700;
-  font-style: italic;
-  font-display: swap;
+  font-display: optional;
 }
 
 @font-face {
@@ -35,15 +19,7 @@
   src: url("assets/fonts/carlito/Carlito-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "CarlitoWeb";
-  src: url("assets/fonts/carlito/Carlito-Italic.ttf") format("truetype");
-  font-weight: 400;
-  font-style: italic;
-  font-display: swap;
+  font-display: optional;
 }
 
 @font-face {
@@ -51,20 +27,20 @@
   src: url("assets/fonts/carlito/Carlito-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
-  font-display: swap;
+  font-display: optional;
 }
 
 @font-face {
-  font-family: "CarlitoWeb";
-  src: url("assets/fonts/carlito/Carlito-BoldItalic.ttf") format("truetype");
+  font-family: "ProductSansWeb";
+  src: url("assets/fonts/product-sans/ProductSans-Bold.ttf") format("truetype");
   font-weight: 700;
-  font-style: italic;
-  font-display: swap;
+  font-style: normal;
+  font-display: optional;
 }
 
 :root {
   --font-body: "XCharterWeb", serif;
-  --font-heading: "Product Sans", "CarlitoWeb", sans-serif;
+  --font-heading: "ProductSansWeb", "CarlitoWeb", sans-serif;
   --font-ui: "CarlitoWeb", sans-serif;
   --paper-meta-gap: 0px;
   --text: #202124;
@@ -243,7 +219,7 @@ hr {
 }
 
 .previous-experience-toggle {
-  margin-left: 8px;
+  margin-left: 0;
   padding: 0;
   border: 0;
   background: transparent;
@@ -371,6 +347,7 @@ hr {
   min-height: 120px;
   margin: 0 auto;
   padding: 8px;
+  border-radius: 8px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -381,8 +358,10 @@ hr {
   position: relative;
   justify-content: flex-start;
   align-items: stretch;
-  padding: 4px;
-  background: #ffffff;
+  padding: 0;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  background: transparent;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
   overflow: hidden;
 }
 
@@ -390,25 +369,17 @@ hr {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
   object-position: center center;
-  background: #ffffff;
+  background: transparent;
 }
 
-.paper-thumb-badge {
-  position: absolute;
-  top: 8px;
-  left: 8px;
-  z-index: 1;
-  padding: 4px 8px;
-  border-radius: 999px;
-  background: rgba(231, 231, 231, 0.96);
-  color: #111111;
-  font-family: var(--font-ui);
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 1;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+.paper-thumb-picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  overflow: hidden;
 }
 
 .paper-thumb--1 {
@@ -477,6 +448,10 @@ hr {
 .pub-item .award-note {
   font-family: var(--font-ui);
   font-size: 14px;
+}
+
+.pub-item .paper-meta .award-note--inline {
+  font: inherit;
 }
 
 .opportunity-note {

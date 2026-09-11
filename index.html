@@ -30,6 +30,9 @@
         "url": "https://mingyuouyang.com/"
       }
     </script>
+    <link rel="preload" href="assets/fonts/xcharter/XCharter-Roman.otf" as="font" type="font/otf" crossorigin />
+    <link rel="preload" href="assets/fonts/carlito/Carlito-Bold.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="preload" href="assets/fonts/product-sans/ProductSans-Bold.ttf" as="font" type="font/ttf" crossorigin />
     <link rel="stylesheet" href="stylesheet.css" />
   </head>
   <body>
@@ -56,7 +59,7 @@
             <!-- </p> -->
             <p>
               I am a second-year Ph.D. student in Computer Science at the
-              <a href="https://www.nus.edu.sg/" target="_blank" rel="noopener noreferrer">National University of Singapore</a>, supervised by
+              <a href="https://www.nus.edu.sg/" target="_blank" rel="noopener noreferrer">National University of Singapore</a>, advised by
               <a href="https://www.comp.nus.edu.sg/~nght/" target="_blank" rel="noopener noreferrer">Prof. Hwee Tou Ng</a>
               and
               <a href="https://sites.google.com/view/showlab" target="_blank" rel="noopener noreferrer">Prof. Mike Zheng Shou</a>.
@@ -66,11 +69,11 @@
             <p>
               I am with
               <a href="https://sites.google.com/view/showlab/home" target="_blank" rel="noopener noreferrer">Show Lab, NUS</a>
-              on multimodal digitial agent research. During undergrad, I worked with <a href="https://zhenzhong-chen.github.io/" target="_blank" rel="noopener noreferrer">Prof. Zhenzhong Chen</a>. I previously interned at <a href="https://www.sensetime.com/en" target="_blank" rel="noopener noreferrer">SenseTime Research Singapore</a> and <a href="https://www.tencent.com/en-us" target="_blank" rel="noopener noreferrer">Tencent Map</a>.
+              on multimodal digital agent research. I previously interned at <a href="https://www.sensetime.com/en" target="_blank" rel="noopener noreferrer">SenseTime Research Singapore</a> and <a href="https://www.tencent.com/products/tencent-map/" target="_blank" rel="noopener noreferrer">Tencent Map, Beijing</a>.
             </p>
             <p>
               I am interested in the interaction and the productivity brought by digital (computer-use/GUI) agents.
-              Currently I am focusing on game agents, as games offer ideal environments with rich visual observations, long-horizon goals, and latency-sensitive interaction. The improvement on perception, reasoning, and control will benefit the future embodiment of digitial agents.
+              Currently I am focusing on game agents, as games offer ideal environments with rich visual observations, long-horizon goals, and latency-sensitive interaction. The improvement on perception, reasoning, and control will benefit the future embodiment of digital agents.
               <button
                 class="previous-experience-toggle"
                 type="button"
@@ -103,9 +106,10 @@
         <tr>
           <td>
             <ul class="news-list">
-              <li><span class="news-date">[2026.06]</span> GameWorld was accepted to <strong>ECCV 2026</strong>🍻 and used as an multimodal interaction benchmark in <a href="https://lf3-static.bytednsdoc.com/obj/eden-cn/lapzild-tss/ljhwZthlaukjlkulzlp/seed2.1/Seed2_1_Model_Card.pdf" target="_blank" rel="noopener noreferrer">Seed-2.1 Model Card</a>. </li>
+              <li><span class="news-date">[2026.09]</span> <a href="https://gameworld-project.github.io/" target="_blank" rel="noopener noreferrer">GameWorld</a> received the <strong class="award-note">Best Paper Runner-Up Award</strong> at the <strong><a href="https://mda-workshop.allen.ai/" target="_blank" rel="noopener noreferrer">MDA Workshop @ ECCV 2026</a></strong> and invited to give a spotlight talk!</li>
+              <li><span class="news-date">[2026.06]</span> GameWorld was accepted to <strong>ECCV 2026</strong>🍻 and used as a multimodal interaction benchmark in <a href="https://lf3-static.bytednsdoc.com/obj/eden-cn/lapzild-tss/ljhwZthlaukjlkulzlp/seed2.1/Seed2_1_Model_Card.pdf" target="_blank" rel="noopener noreferrer">Seed-2.1 Model Card</a>. </li>
               <li><span class="news-date">[2026.04]</span> We released <a href="https://arxiv.org/abs/2604.07429" target="_blank" rel="noopener noreferrer">GameWorld</a>, a standardized and comprehensive evaluation platform for game agents. Check <a href="https://gameworld-project.github.io/" target="_blank" rel="noopener noreferrer">Project Page</a>, <a href="https://arxiv.org/abs/2604.07429" target="_blank" rel="noopener noreferrer">Technical Report</a>, and <a href="https://github.com/gameworld-project/gameworld" target="_blank" rel="noopener noreferrer">GitHub</a>.</li>
-              <li><span class="news-date">[2026.03]</span> Our GUI perception and efficient UI grounding work <a href="https://arxiv.org/abs/2601.03928" target="_blank" rel="noopener noreferrer">FocusUI</a> was accepted by <strong>CVPR 2026</strong> with <span class="award-note">Compute Transparency Champion award</span> and <span class="award-note">CVPR BPScholarship</span>. See you in Denver!</li>
+              <li><span class="news-date">[2026.03]</span> Our efficient UI grounding work <a href="https://arxiv.org/abs/2601.03928" target="_blank" rel="noopener noreferrer">FocusUI</a> was accepted by <strong>CVPR 2026</strong> with <strong class="award-note">Compute Transparency Champion award</strong>.</li>
               <li><span class="news-date">[2025.09]</span> Our slide generation work <a href="https://arxiv.org/abs/2512.20292" target="_blank" rel="noopener noreferrer">SlideTailor</a> was accepted by <strong>AAAI 2026</strong>.</li>
               <li><span class="news-date">[2025.01]</span> Started Ph.D. in School of Computing, NUS.</li>
               <li><span class="news-date">[2024.06]</span> Our JPEG restoration work <a href="https://arxiv.org/abs/2308.09110" target="_blank" rel="noopener noreferrer">DCTransformer</a> was published in <strong>IEEE TIP</strong>.</li>
@@ -129,33 +133,36 @@
         <tr class="pub-item">
           <td width="28%">
             <div class="paper-thumb paper-thumb--image">
-              <span class="paper-thumb-badge">ECCV '26</span>
-              <img class="paper-thumb-image" src="assets/img/projects/gameworld-teaser.jpg" alt="GameWorld teaser" />
+              <picture class="paper-thumb-picture">
+                <source media="(prefers-reduced-motion: reduce)" srcset="assets/img/projects/gameworld-teaser.jpg" />
+                <img class="paper-thumb-image" src="assets/img/projects/gameworld-demo.gif" alt="GameWorld demo showing multimodal agents interacting across browser games" />
+              </picture>
             </div>
           </td>
           <td width="72%">
             <p>
               <heading class="paper-title-split"><span class="paper-title-name">GameWorld:</span><span class="paper-title-subtitle">Towards Standardized and Verifiable Evaluation of Multimodal Game Agents</span></heading><br />
               <span class="author-line"><span class="author-highlight">Mingyu Ouyang*</span>, Siyuan Hu*, Kevin Qinghong Lin, Hwee Tou Ng, Mike Zheng Shou <span class="paper-note"></span></span><br />
-              <span class="paper-meta">ECCV 2026</span>
+              <span class="paper-meta">ECCV 2026 · <span class="award-note award-note--inline">Best Paper Runner-Up Award, Multimodal Digital Agents Workshop @ ECCV 2026</span></span>
             </p>
             <p class="paper-links"><a href="https://arxiv.org/abs/2604.07429" target="_blank" rel="noopener noreferrer">📃 paper</a> | <a href="https://gameworld-project.github.io/" target="_blank" rel="noopener noreferrer">🌐 project page</a> | <a href="https://github.com/gameworld-project/gameworld" target="_blank" rel="noopener noreferrer">🏠 github</a> | <a href="assets/video/projects/gameworld-demo.mp4" target="_blank" rel="noopener noreferrer">▶️ demo</a></p>
-            <p class="paper-summary">Formalizes two game agent interfaces (CUA and generalist agent). <br /> Standardizes game agent evaluation across 34 browser games and 170 tasks with browser-based sandbox execution and and state-verifiable scoring.</p>
+            <p class="paper-summary">Formalizes two game agent interfaces (CUA and generalist agent).  Standardizes game agent evaluation across 34 browser games and 170 tasks with browser-based sandbox execution and state-verifiable scoring.</p>
           </td>
         </tr>
         <tr class="pub-item">
           <td width="28%">
             <div class="paper-thumb paper-thumb--image">
-              <span class="paper-thumb-badge">CVPR '26</span>
-              <img class="paper-thumb-image" src="assets/img/projects/focusui-teaser.jpg" alt="FocusUI teaser" />
+              <picture class="paper-thumb-picture">
+                <source media="(prefers-reduced-motion: reduce)" srcset="assets/img/projects/focusui-teaser.jpg" />
+                <img class="paper-thumb-image" src="assets/img/projects/focusui-demo.gif" alt="FocusUI framework followed by two UI grounding examples progressing from screenshots to saliency and focused token selection" />
+              </picture>
             </div>
           </td>
           <td width="72%">
             <p>
               <heading class="paper-title-split"><span class="paper-title-name">FocusUI:</span><span class="paper-title-subtitle">Efficient UI Grounding via Position-Preserving Visual Token Selection</span></heading><br />
               <span class="author-line"><span class="author-highlight">Mingyu Ouyang</span>, Kevin Qinghong Lin, Mike Zheng Shou, Hwee Tou Ng</span><br />
-              <span class="paper-meta">CVPR 2026</span><br />
-              <span class="award-note">CVPR Compute Transparency Champion award, CVPR BPScholarship</span>
+              <span class="paper-meta">CVPR 2026 · <span class="award-note award-note--inline">CVPR Compute Transparency Champion award</span></span>
             </p>
             <p class="paper-links"><a href="https://arxiv.org/abs/2601.03928" target="_blank" rel="noopener noreferrer">📃 paper</a> | <a href="https://showlab.github.io/FocusUI/" target="_blank" rel="noopener noreferrer">🌐 project page</a> | <a href="https://github.com/showlab/FocusUI" target="_blank" rel="noopener noreferrer">🏠 github</a> | <a href="https://huggingface.co/datasets/yyyang/FocusUI-Training-Data" target="_blank" rel="noopener noreferrer">🤗 dataset</a> | <a href="assets/pdf/projects/focusui-poster.pdf" target="_blank" rel="noopener noreferrer">🖼️ poster</a></p>
             <p class="paper-summary">Selects instruction-relevant UI tokens while preserving positional continuity, improving grounding accuracy and efficiency under aggressive token reduction.</p>
@@ -164,8 +171,10 @@
         <tr class="pub-item">
           <td width="28%">
             <div class="paper-thumb paper-thumb--image">
-              <span class="paper-thumb-badge">AAAI '26</span>
-              <img class="paper-thumb-image" src="assets/img/projects/slidetailor-teaser.jpg" alt="SlideTailor teaser" />
+              <picture class="paper-thumb-picture">
+                <source media="(prefers-reduced-motion: reduce)" srcset="assets/img/projects/slidetailor-teaser.jpg" />
+                <img class="paper-thumb-image" src="assets/img/projects/slidetailor-teaser.gif?v=72bf411f0837" alt="SlideTailor workflow: paper and preferences become slides, a speech script, and a video presentation" />
+              </picture>
             </div>
           </td>
           <td width="72%">
@@ -181,15 +190,17 @@
         <tr class="pub-item">
           <td width="28%">
             <div class="paper-thumb paper-thumb--image">
-              <span class="paper-thumb-badge">arXiv '24</span>
-              <img class="paper-thumb-image" src="assets/img/projects/dawn-gui-agent-teaser.jpg" alt="The Dawn of GUI Agent teaser" />
+              <picture class="paper-thumb-picture">
+                <source media="(prefers-reduced-motion: reduce)" srcset="assets/img/projects/dawn-gui-agent-teaser.jpg" />
+                <img class="paper-thumb-image" src="assets/img/projects/computer-use-oob-demo.gif" alt="Computer Use out-of-the-box demo controlling a desktop browser from a mobile instruction" />
+              </picture>
             </div>
           </td>
           <td width="72%">
             <p>
-              <heading class="paper-title-split"><span class="paper-title-name">The Dawn of GUI Agent:</span><span class="paper-title-subtitle">A Preliminary Case Study with Claude 3.5 Computer Use <br /> (Computer-use OOTB)</span></heading><br />
+              <heading class="paper-title-split"><span class="paper-title-name">The Dawn of GUI Agent:</span><span class="paper-title-subtitle">A Preliminary Case Study with Claude 3.5 Computer Use  </span></heading><br />
               <span class="author-line">Siyuan Hu, <span class="author-highlight">Mingyu Ouyang</span>, Difei Gao, Mike Zheng Shou</span><br />
-              <span class="paper-meta">Technical Report 2024</span><br />
+              <span class="paper-meta">arXiv 2024</span><br />
               <span class="award-note">GitHub 2k stars</span>
             </p>
             <p class="paper-links"><a href="https://arxiv.org/abs/2411.10323" target="_blank" rel="noopener noreferrer">📃 paper</a> | <a href="https://computer-use-ootb.github.io" target="_blank" rel="noopener noreferrer">🌐 project page</a> | <a href="https://github.com/showlab/computer_use_ootb" target="_blank" rel="noopener noreferrer">🏠 github</a></p>
@@ -199,8 +210,10 @@
         <tr class="pub-item">
           <td width="28%">
             <div class="paper-thumb paper-thumb--image">
-              <span class="paper-thumb-badge">CVPR '24</span>
-              <img class="paper-thumb-image" src="assets/img/projects/assistgui-teaser.jpg" alt="AssistGUI: Task-Oriented PC Graphical User Interface Automation teaser" />
+              <picture class="paper-thumb-picture">
+                <source media="(prefers-reduced-motion: reduce)" srcset="assets/img/projects/assistgui-teaser.jpg" />
+                <img class="paper-thumb-image" src="assets/img/projects/assistgui-demo.gif" alt="AssistGUI demo placing text behind a person in Adobe After Effects" />
+              </picture>
             </div>
           </td>
           <td width="72%">
@@ -216,8 +229,10 @@
         <tr class="pub-item">
           <td width="28%">
             <div class="paper-thumb paper-thumb--image">
-              <span class="paper-thumb-badge">TIP '24</span>
-              <img class="paper-thumb-image" src="assets/img/projects/dctransformer-teaser.jpg" alt="DCTransformer teaser" />
+              <picture class="paper-thumb-picture">
+                <source media="(prefers-reduced-motion: reduce)" srcset="assets/img/projects/dctransformer-teaser.jpg" />
+                <img class="paper-thumb-image" src="assets/img/projects/dctransformer-recovery.gif" alt="DCTransformer comparison showing a compressed JPEG and the recovered high-quality image" />
+              </picture>
             </div>
           </td>
           <td width="72%">
@@ -272,7 +287,7 @@
         </tr>
         <tr class="detail-item">
           <td width="28%"><span class="entry-date">Mar. 2022 -<br class="mobile-date-break" /> Oct. 2022</span></td>
-          <td class="detail-copy"><span class="detail-title">Tencent Map</span></td>
+          <td class="detail-copy"><span class="detail-title">Tencent Map, Beijing</span></td>
         </tr>
       </table>
 
