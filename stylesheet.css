@@ -441,6 +441,10 @@ hr {
   font-size: 13px;
 }
 
+.paper-venue {
+  font-weight: 700;
+}
+
 .award-note {
   color: #c62828;
 }
