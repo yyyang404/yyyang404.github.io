@@ -30,9 +30,12 @@
         "url": "https://mingyuouyang.com/"
       }
     </script>
-    <link rel="preload" href="assets/fonts/xcharter/XCharter-Roman.otf" as="font" type="font/otf" crossorigin />
-    <link rel="preload" href="assets/fonts/carlito/Carlito-Bold.ttf" as="font" type="font/ttf" crossorigin />
-    <link rel="preload" href="assets/fonts/product-sans/ProductSans-Bold.ttf" as="font" type="font/ttf" crossorigin />
+    <!-- Generated font preloads: tools/fonts/build.py -->
+    <link rel="preload" href="assets/fonts/xcharter/XCharter-Roman.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="assets/fonts/carlito/Carlito-Regular.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="assets/fonts/carlito/Carlito-Bold.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="assets/fonts/product-sans/ProductSans-Bold.woff2" as="font" type="font/woff2" crossorigin />
+    <!-- End generated font preloads -->
     <link rel="stylesheet" href="stylesheet.css" />
   </head>
   <body>
@@ -40,7 +43,7 @@
       <p class="page-heading"><pageheading>Mingyu Ouyang</pageheading></p>
       <p class="page-subtitle">CS Ph.D. Student, National University of Singapore</p>
 
-      <table class="full-table stack-table" cellspacing="0" cellpadding="20">
+      <table class="full-table stack-table intro-layout" cellspacing="0" cellpadding="0">
         <tr>
           <td width="30%">
             <img class="intro-photo" src="assets/img/portrait.png" alt="Portrait of Mingyu Ouyang" />
@@ -59,7 +62,7 @@
             <!-- </p> -->
             <p>
               I am a second-year Ph.D. student in Computer Science at the
-              <a href="https://www.nus.edu.sg/" target="_blank" rel="noopener noreferrer">National University of Singapore</a>, advised by
+              <a href="https://www.nus.edu.sg/" target="_blank" rel="noopener noreferrer">National University of Singapore</a>, co-advised by
               <a href="https://www.comp.nus.edu.sg/~nght/" target="_blank" rel="noopener noreferrer">Prof. Hwee Tou Ng</a>
               and
               <a href="https://sites.google.com/view/showlab" target="_blank" rel="noopener noreferrer">Prof. Mike Zheng Shou</a>.
@@ -68,21 +71,21 @@
             </p>
             <p>
               I am with
-              <a href="https://sites.google.com/view/showlab/home" target="_blank" rel="noopener noreferrer">Show Lab, NUS</a>
+              <a href="https://sites.google.com/view/showlab/home" target="_blank" rel="noopener noreferrer">Show Lab, NUS</a> and <a href="https://arc.tencent.com/" target="_blank" rel="noopener noreferrer">ARC Lab, Tencent</a>
               on multimodal digital agent research. I previously interned at <a href="https://www.sensetime.com/en" target="_blank" rel="noopener noreferrer">SenseTime Research Singapore</a> and <a href="https://www.tencent.com/products/tencent-map/" target="_blank" rel="noopener noreferrer">Tencent Map, Beijing</a>.
             </p>
             <p>
-              I am interested in the interaction and the productivity brought by digital (computer-use/GUI) agents.
-              Currently I am focusing on game agents, as games offer ideal environments with rich visual observations, long-horizon goals, and latency-sensitive interaction. The improvement on perception, reasoning, and control will benefit the future embodiment of digital agents.
+              I am interested in the interaction and productivity brought by digital (computer-use/GUI/game) agents.
+              Recently, I am focusing on game environments, as games offer rich visual observations, long-horizon goals, and dynamic interaction. The improvement on perception, reasoning, and control will benefit the future embodiment of digital agents.
               <button
                 class="previous-experience-toggle"
                 type="button"
                 aria-expanded="false"
                 aria-controls="previous-experience-content"
                 onclick="const expanded = this.getAttribute('aria-expanded') === 'true'; this.setAttribute('aria-expanded', String(!expanded)); document.getElementById('previous-experience-content').hidden = expanded;"
-              >[Previous experience]</button>
+              >Previous experience</button>
               <span id="previous-experience-content" class="previous-experience-content" hidden>
-                Previously, I worked on low-level vision training on-device models for camera modules. I was experienced with AI image signal processing (AI-ISP), image compression and restoration.
+                Previously, I worked on low-level vision training on-device image restoration models for cameras. I was experienced with AI image signal processing (AI-ISP), image compression and restoration.
               </span>
             </p>
             <!-- <p class="opportunity-note"> -->
@@ -97,38 +100,44 @@
 
       <hr />
 
-      <table class="full-table" cellspacing="0" cellpadding="10" id="news">
+      <table class="full-table section-heading" cellspacing="0" cellpadding="0" id="news">
         <tr>
           <td><sectionheading>Updates</sectionheading></td>
         </tr>
       </table>
-      <table class="full-table" cellspacing="0" cellpadding="15">
+      <table class="full-table section-content" cellspacing="0" cellpadding="0">
         <tr>
           <td>
             <ul class="news-list">
-              <li><span class="news-date">[2026.09]</span> <a href="https://gameworld-project.github.io/" target="_blank" rel="noopener noreferrer">GameWorld</a> received the <strong class="award-note">Best Paper Runner-Up Award</strong> at the <a href="https://mda-workshop.allen.ai/" target="_blank" rel="noopener noreferrer">MDA Workshop @ ECCV 2026</a> and invited to give a spotlight talk!</li>
-              <li><span class="news-date">[2026.06]</span> <a href="https://gameworld-project.github.io/" target="_blank" rel="noopener noreferrer">GameWorld</a> was accepted to <strong>ECCV 2026</strong>🍻 and used as a multimodal interaction benchmark in <a href="https://lf3-static.bytednsdoc.com/obj/eden-cn/lapzild-tss/ljhwZthlaukjlkulzlp/seed2.1/Seed2_1_Model_Card.pdf" target="_blank" rel="noopener noreferrer">Seed-2.1 Model Card</a>. </li>
+              <li><span class="news-date">[2026.09]</span> <a href="https://gameworld-project.github.io/" target="_blank" rel="noopener noreferrer">GameWorld</a> received the <strong class="award-note">Best Paper Runner-Up Award</strong> and invited to give a spotlight talk at the <a href="https://mda-workshop.allen.ai/" target="_blank" rel="noopener noreferrer">MDA Workshop @ ECCV 2026</a>. </li>
+              <li><span class="news-date">[2026.08]</span> Received the <strong class="award-note">Research Achievement Award</strong> from NUS School of Computing.</li>
+              <li><span class="news-date">[2026.06]</span> <a href="https://gameworld-project.github.io/" target="_blank" rel="noopener noreferrer">GameWorld</a> was accepted to <strong>ECCV 2026</strong> and used in <a href="https://lf3-static.bytednsdoc.com/obj/eden-cn/lapzild-tss/ljhwZthlaukjlkulzlp/seed2.1/Seed2_1_Model_Card.pdf" target="_blank" rel="noopener noreferrer">Seed-2.1 Model Card</a>. </li>
               <li><span class="news-date">[2026.04]</span> We released <a href="https://arxiv.org/abs/2604.07429" target="_blank" rel="noopener noreferrer">GameWorld</a>, a standardized benchmark for game agents. Check <a href="https://gameworld-project.github.io/" target="_blank" rel="noopener noreferrer">Project Page</a>, <a href="https://arxiv.org/abs/2604.07429" target="_blank" rel="noopener noreferrer">Technical Report</a>, and <a href="https://github.com/gameworld-project/gameworld" target="_blank" rel="noopener noreferrer">GitHub</a>.</li>
-              <li><span class="news-date">[2026.03]</span> Our efficient UI grounding work <a href="https://arxiv.org/abs/2601.03928" target="_blank" rel="noopener noreferrer">FocusUI</a> was accepted by <strong>CVPR 2026</strong> with <strong class="award-note">Compute Transparency Champion award</strong>.</li>
-              <li><span class="news-date">[2025.09]</span> Our slide generation work <a href="https://arxiv.org/abs/2512.20292" target="_blank" rel="noopener noreferrer">SlideTailor</a> was accepted by <strong>AAAI 2026</strong>.</li>
-              <li><span class="news-date">[2025.01]</span> Started Ph.D. in School of Computing, NUS.</li>
-              <li><span class="news-date">[2024.06]</span> Our JPEG restoration work <a href="https://arxiv.org/abs/2308.09110" target="_blank" rel="noopener noreferrer">DCTransformer</a> was published in <strong>IEEE TIP</strong>.</li>
-              <li><span class="news-date">[2024.03]</span> Our desktop GUI agent framework <a href="https://openaccess.thecvf.com/content/CVPR2024/html/Gao_AssistGUI_Task-Oriented_PC_Graphical_User_Interface_Automation_CVPR_2024_paper.html" target="_blank" rel="noopener noreferrer">AssistGUI</a> was accepted by <strong>CVPR 2024</strong>.</li>
-              <li><span class="news-date">[2023.09]</span> I joined <a href="https://sites.google.com/view/showlab/home" target="_blank" rel="noopener noreferrer">ShowLab, NUS</a> and started my internship at <a href="https://www.sensetime.com/en" target="_blank" rel="noopener noreferrer">SenseTime Research Singapore</a>.</li>
-              <li><span class="news-date">[2023.08]</span> Started my Master study in Data Science and Machine Learning at Faculty of Science, NUS.</li>
+              <li><span class="news-date">[2026.03]</span> <a href="https://arxiv.org/abs/2601.03928" target="_blank" rel="noopener noreferrer">FocusUI</a> was accepted by <strong>CVPR 2026</strong> with <strong class="award-note">Compute Transparency Champion award</strong>.</li>
+              <li><span class="news-date">[2025.09]</span> <a href="https://arxiv.org/abs/2512.20292" target="_blank" rel="noopener noreferrer">SlideTailor</a> was accepted by <strong>AAAI 2026</strong>.</li>
             </ul>
+            <details class="news-archive">
+              <summary>Earlier updates <span class="news-archive-years">(2023–2025)</span></summary>
+              <ul class="news-list">
+                <li><span class="news-date">[2025.01]</span> Started Ph.D. in School of Computing, NUS.</li>
+                <li><span class="news-date">[2024.06]</span> <a href="https://arxiv.org/abs/2308.09110" target="_blank" rel="noopener noreferrer">DCTransformer</a> was accepted by <strong>IEEE Transactions on Image Processing</strong>.</li>
+                <li><span class="news-date">[2024.03]</span> <a href="https://openaccess.thecvf.com/content/CVPR2024/html/Gao_AssistGUI_Task-Oriented_PC_Graphical_User_Interface_Automation_CVPR_2024_paper.html" target="_blank" rel="noopener noreferrer">AssistGUI</a> was accepted by <strong>CVPR 2024</strong>.</li>
+                <li><span class="news-date">[2023.09]</span> Joined <a href="https://sites.google.com/view/showlab/home" target="_blank" rel="noopener noreferrer">ShowLab, NUS</a> and internship at <a href="https://www.sensetime.com/en" target="_blank" rel="noopener noreferrer">SenseTime Research Singapore</a>.</li>
+                <li><span class="news-date">[2023.08]</span> Started Master's in Data Science and Machine Learning at Faculty of Science, NUS.</li>
+              </ul>
+            </details>
           </td>
         </tr>
       </table>
       <hr />
 
-      <table class="full-table" cellspacing="0" cellpadding="10" id="publications">
+      <table class="full-table section-heading" cellspacing="0" cellpadding="0" id="publications">
         <tr>
           <td><sectionheading>Publications</sectionheading> <span class="paper-note">(*equal contribution)</span></td>
         </tr>
       </table>
 
-      <table class="full-table stack-table" cellspacing="0" cellpadding="15">
+      <table class="full-table stack-table section-content" cellspacing="0" cellpadding="0">
 
         <tr class="pub-item">
           <td width="28%">
@@ -145,7 +154,7 @@
               <span class="author-line"><span class="author-highlight">Mingyu Ouyang*</span>, Siyuan Hu*, Kevin Qinghong Lin, Hwee Tou Ng, Mike Zheng Shou <span class="paper-note"></span></span><br />
               <span class="paper-meta"><span class="paper-venue">ECCV 2026</span>, <span class="award-note award-note--inline">Best Paper Runner-Up Award, Multimodal Digital Agents Workshop @ ECCV 2026</span></span>
             </p>
-            <p class="paper-links"><a href="https://arxiv.org/abs/2604.07429" target="_blank" rel="noopener noreferrer">📃 paper</a> | <a href="https://gameworld-project.github.io/" target="_blank" rel="noopener noreferrer">🌐 project page</a> | <a href="https://github.com/gameworld-project/gameworld" target="_blank" rel="noopener noreferrer">🏠 github</a> | <a href="assets/video/projects/gameworld-demo.mp4" target="_blank" rel="noopener noreferrer">▶️ demo</a> | <a href="assets/pdf/projects/gameworld-poster.pdf" target="_blank" rel="noopener noreferrer">🖼️ poster</a></p>
+            <p class="paper-links"><a href="https://arxiv.org/abs/2604.07429" target="_blank" rel="noopener noreferrer">📃 paper</a> | <a href="https://gameworld-project.github.io/" target="_blank" rel="noopener noreferrer">🌐 project page</a> | <a href="https://github.com/gameworld-project/gameworld" target="_blank" rel="noopener noreferrer">🏠 github</a> | <a href="assets/video/projects/gameworld-demo.mp4" target="_blank" rel="noopener noreferrer">▶️ demo</a> | <a href="assets/pdf/projects/gameworld-poster.pdf" target="_blank" rel="noopener noreferrer">🖼️ poster</a> | <a href="assets/pdf/projects/gameworld-slides.pdf" target="_blank" rel="noopener noreferrer">📊 slides</a></p>
             <p class="paper-summary">Standardizes the evaluation of game agents (both CUA and generalist agent interfaces) with 34 games and 170 tasks, using browser-based sandbox execution and state-verifiable scoring.</p>
           </td>
         </tr>
@@ -162,7 +171,7 @@
             <p>
               <heading class="paper-title-split"><span class="paper-title-name">FocusUI:</span><span class="paper-title-subtitle">Efficient UI Grounding via Position-Preserving Visual Token Selection</span></heading><br />
               <span class="author-line"><span class="author-highlight">Mingyu Ouyang</span>, Kevin Qinghong Lin, Mike Zheng Shou, Hwee Tou Ng</span><br />
-              <span class="paper-meta"><span class="paper-venue">CVPR 2026</span> · <span class="award-note award-note--inline">CVPR Compute Transparency Champion award</span></span>
+              <span class="paper-meta"><span class="paper-venue">CVPR 2026</span>, <span class="award-note award-note--inline">CVPR Compute Transparency Champion Award</span></span>
             </p>
             <p class="paper-links"><a href="https://arxiv.org/abs/2601.03928" target="_blank" rel="noopener noreferrer">📃 paper</a> | <a href="https://showlab.github.io/FocusUI/" target="_blank" rel="noopener noreferrer">🌐 project page</a> | <a href="https://github.com/showlab/FocusUI" target="_blank" rel="noopener noreferrer">🏠 github</a> | <a href="https://huggingface.co/datasets/yyyang/FocusUI-Training-Data" target="_blank" rel="noopener noreferrer">🤗 dataset</a> | <a href="assets/pdf/projects/focusui-poster.pdf" target="_blank" rel="noopener noreferrer">🖼️ poster</a></p>
             <p class="paper-summary">Selects instruction-relevant UI tokens while preserving positional continuity, improving grounding accuracy and efficiency under aggressive token reduction.</p>
@@ -200,7 +209,7 @@
             <p>
               <heading class="paper-title-split"><span class="paper-title-name">The Dawn of GUI Agent:</span><span class="paper-title-subtitle">A Preliminary Case Study with Claude 3.5 Computer Use  </span></heading><br />
               <span class="author-line">Siyuan Hu, <span class="author-highlight">Mingyu Ouyang</span>, Difei Gao, Mike Zheng Shou</span><br />
-              <span class="paper-meta">Techical Report 2024, </span><span class="award-note award-note--inline">GitHub 2k stars</span>
+              <span class="paper-meta">Techical Report 2024, <span class="award-note award-note--inline">GitHub 2k stars</span></span>
             </p>
             <p class="paper-links"><a href="https://arxiv.org/abs/2411.10323" target="_blank" rel="noopener noreferrer">📃 paper</a> | <a href="https://computer-use-ootb.github.io" target="_blank" rel="noopener noreferrer">🌐 project page</a> | <a href="https://github.com/showlab/computer_use_ootb" target="_blank" rel="noopener noreferrer">🏠 github</a></p>
             <p class="paper-summary">An out-of-the-box framework for desktop GUI agents, supporting both Windows and macOS.</p>
@@ -248,12 +257,12 @@
 
       <hr />
 
-      <table class="full-table" cellspacing="0" cellpadding="10" id="education">
+      <table class="full-table section-heading" cellspacing="0" cellpadding="0" id="education">
         <tr>
           <td><sectionheading>Education</sectionheading></td>
         </tr>
       </table>
-      <table class="full-table detail-grid" cellspacing="0" cellpadding="10">
+      <table class="full-table detail-grid section-content" cellspacing="0" cellpadding="0">
         <tr class="detail-item">
           <td width="28%"><span class="entry-date">Jan. 2025 -<br class="mobile-date-break" /> Present</span></td>
           <td class="detail-copy"><span class="detail-title">National University of Singapore</span><br />Ph.D. in Computer Science</td>
@@ -270,12 +279,12 @@
 
       <hr />
 
-      <table class="full-table" cellspacing="0" cellpadding="10" id="experience">
+      <table class="full-table section-heading" cellspacing="0" cellpadding="0" id="experience">
         <tr>
           <td><sectionheading>Experiences</sectionheading></td>
         </tr>
       </table>
-      <table class="full-table detail-grid" cellspacing="0" cellpadding="10">
+      <table class="full-table detail-grid section-content" cellspacing="0" cellpadding="0">
         <tr class="detail-item">
           <td width="28%"><span class="entry-date">Mar. 2025 -<br class="mobile-date-break" /> Oct. 2025</span></td>
           <td class="detail-copy"><a class="detail-title" href="https://useit.im/" target="_blank" rel="noopener noreferrer">UseIt AI</a></td>
@@ -292,12 +301,12 @@
 
       <hr />
 
-      <table class="full-table" cellspacing="0" cellpadding="10" id="misc">
+      <table class="full-table section-heading" cellspacing="0" cellpadding="0" id="misc">
         <tr>
           <td><sectionheading>Miscellaneous</sectionheading></td>
         </tr>
       </table>
-      <table class="full-table" cellspacing="0" cellpadding="15">
+      <table class="full-table section-content" cellspacing="0" cellpadding="0">
         <tr>
           <td>
             <ul class="bullet-list">
@@ -307,7 +316,7 @@
         </tr>
       </table>
 
-      <p class="footer-note">Mingyu Ouyang. Last updated on 2026.06.</p>
+      <p class="footer-note">Mingyu Ouyang. Last updated on 2026.09.</p>
 
     </div>
     <div aria-hidden="true" style="display: none;">
