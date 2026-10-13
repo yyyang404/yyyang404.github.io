@@ -1,5 +1,5 @@
 {
-  "revision": "6106641a4fc2b87ff0922b6f4bba719e9df0c843d058d7765407b96616a80978",
+  "revision": "b3a4c4c3b62da074812a9b6e90bc9f4d2d2b2ba1631da2a6c584ca8bebffdc8b",
   "settings": {
     "width": 320,
     "height": 180,
@@ -28,8 +28,8 @@
     {
       "id": "base_2d_arcade_planar-appearance-camera-scene",
       "gif": "base_2d_arcade_planar-appearance-camera-scene.gif",
-      "source_sha256": "422cbe9280007d23881a339c829251fd900bce29194ea65f597fc320b8ca2257",
-      "sha256": "488ee3d23b884bc76af5f25ab554e07efbfb76593731e71562e221df99adcd94"
+      "source_sha256": "b3d7948e2b31c90ae677354c4284e013c03f596054114d6d880461cfddd821ee",
+      "sha256": "e2d975b40dc34fe6f09dd04c4fc00ac6993ab1653000d7939ee8b7451fd55701"
     },
     {
       "id": "base_2d_platform-original",

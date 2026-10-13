@@ -1,4 +1,4 @@
-import { stages, stageDuration } from './replay-data.js?v=8ed002c272ab';
+import { stages } from './replay-data.js?v=0e39dfe868d9';
 
 export function setupReplay() {
   const $ = id => document.getElementById(id);
@@ -23,6 +23,7 @@ export function setupReplay() {
       !dialogs.some(dialog => dialog.open);
   }
   function render() {
+    const stageDuration = stages[currentStage].duration;
     const localTime = ready ? Math.max(0, Math.min(stageDuration, video.currentTime)) : 0;
     if (currentStage !== renderedStage) {
       renderedStage = currentStage;

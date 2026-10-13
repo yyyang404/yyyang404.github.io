@@ -1,4 +1,4 @@
-import { setupReplay } from './replay.js?v=b24a06225b67';
+import { setupReplay } from './replay.js?v=2ba5121a28f2';
 import { setupResults } from './results.js?v=353f1d975dbf';
 import { setupRandomization } from './randomization.js?v=8a9320501592';
 
