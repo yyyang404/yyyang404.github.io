@@ -1,5 +1,6 @@
 import { setupReplay } from './replay.js?v=b24a06225b67';
 import { setupResults } from './results.js?v=353f1d975dbf';
+import { setupRandomization } from './randomization.js?v=8a9320501592';
 
 const $ = (id) => document.getElementById(id);
 let catalog = [];
@@ -257,6 +258,7 @@ $('game-dialog').addEventListener('click', (event) => {
 });
 setupReplay();
 setupResults();
+setupRandomization();
 setupIntroHighlights();
 window.addEventListener('pagehide', release);
 $('copy-citation').addEventListener('click', async () => {
@@ -270,7 +272,7 @@ $('copy-citation').addEventListener('click', async () => {
   }
 });
 try {
-  const response = await fetch('games.json?v=71cf59d8e973');
+  const response = await fetch('games.json?v=b13aa274695e');
   if (!response.ok) throw new Error('Catalog unavailable');
   catalog = await response.json();
   buildCatalog();
