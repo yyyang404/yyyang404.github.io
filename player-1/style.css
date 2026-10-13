@@ -298,7 +298,7 @@
 
 /* Learning across the training environments. */
 .learning-section{margin:0 28px 28px;padding-top:25px;border-top:1px solid var(--line)}
-.learning-section h3{margin:8px 0 14px;font-size:var(--section-title-size);letter-spacing:-.8px;line-height:1.2}
+.learning-section h3{margin:8px 0 14px;font-size:40px;letter-spacing:-.8px;line-height:1.2}
 .learning-description{font-family:var(--serif);font-size:var(--body-size);line-height:1.6;margin-bottom:22px}
 .learning-figure{margin:0}
 .learning-plot-scroll{max-width:100%;overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:thin}
@@ -311,4 +311,4 @@
 .learning-zoom-view{max-height:calc(100dvh - 110px);overflow:auto;overscroll-behavior-x:contain;padding:12px 24px}
 .learning-zoom-view img{display:block;width:auto;height:min(420px,calc(100dvh - 160px));max-width:none}
 @media(max-width:1050px){.learning-section{margin-inline:20px}}
-@media(max-width:760px){.learning-section{margin:0 17px 22px;padding-top:20px}.learning-description{margin-bottom:16px}.learning-figure img{width:auto;max-width:none;height:280px}.learning-footer{gap:12px;font-size:var(--label-size)}.learning-footer>button{min-height:44px;flex:none}.learning-zoom-view{padding:8px 12px}.learning-zoom-view img{height:min(320px,calc(100dvh - 140px))}#learning-dialog{width:calc(100% - 24px)}}
+@media(max-width:760px){.learning-section{margin:0 17px 22px;padding-top:20px}.learning-section h3{font-size:var(--section-title-size)}.learning-description{margin-bottom:16px}.learning-figure img{width:auto;max-width:none;height:280px}.learning-footer{gap:12px;font-size:var(--label-size)}.learning-footer>button{min-height:44px;flex:none}.learning-zoom-view{padding:8px 12px}.learning-zoom-view img{height:min(320px,calc(100dvh - 140px))}#learning-dialog{width:calc(100% - 24px)}}
