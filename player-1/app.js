@@ -1,6 +1,7 @@
 import { setupReplay } from './replay.js?v=b24a06225b67';
 import { setupResults } from './results.js?v=353f1d975dbf';
 import { setupRandomization } from './randomization.js?v=8a9320501592';
+import { setupLearning } from './learning.js?v=8f1c9fc4b746';
 
 const $ = (id) => document.getElementById(id);
 let catalog = [];
@@ -259,6 +260,7 @@ $('game-dialog').addEventListener('click', (event) => {
 setupReplay();
 setupResults();
 setupRandomization();
+setupLearning();
 setupIntroHighlights();
 window.addEventListener('pagehide', release);
 $('copy-citation').addEventListener('click', async () => {
