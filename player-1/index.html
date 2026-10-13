@@ -5,7 +5,7 @@
   <meta name="description" content="Player-1 learns game control from synthetic experience. Watch the agent, play sixteen synthetic environments, and explore its gameplay demonstrations.">
   <meta name="theme-color" content="#151515"><link rel="icon" href="data:,">
   <title>Player-1 · Learning to Play from Synthetic Experience</title>
-  <link rel="stylesheet" href="style.css?v=88f70bace634"><script type="module" src="app.js?v=3fd879b0713a"></script><script type="module" src="trajectories.js?v=6312c3417fb0"></script><script type="module" src="method.js?v=ec0e2daeed19"></script><script type="module" src="figures.js?v=53323068d7bb"></script>
+  <link rel="stylesheet" href="style.css?v=82fbb0c00ea6"><script type="module" src="app.js?v=37491c741e80"></script><script type="module" src="trajectories.js?v=6312c3417fb0"></script><script type="module" src="method.js?v=ec0e2daeed19"></script><script type="module" src="figures.js?v=53323068d7bb"></script>
 </head>
 <body>
   <a class="skip" href="#play">Skip to interactive environments</a>
@@ -114,10 +114,9 @@ Keys: hold(&quot;d&quot;, &quot;w&quot;)</pre></section></div></aside></div>
         </div>
       </details>
       <section class="learning-section" id="learning" aria-labelledby="learning-heading">
-        <p class="eyebrow">LEARNING</p>
+        <p class="eyebrow">LEARNING DYNAMICS</p>
         <h3 id="learning-heading">Learning across sixteen worlds</h3>
-        <p class="learning-description">Both models improve across sixteen training environments over 200 RL steps.</p>
-        <figure class="learning-figure"><div class="learning-plot-scroll" role="region" aria-label="Learning curves across sixteen environments" tabindex="0"><img id="learning-image" src="assets/learning-curves/all.svg?v=cd501a1f689d" alt="Episode returns for 9B and 35B-A3B across sixteen training environments over 200 RL steps" width="396" height="122" loading="lazy" decoding="async" draggable="false"></div><figcaption class="learning-footer"><span>Episode return · 200 RL steps</span><button type="button" id="enlarge-learning" aria-haspopup="dialog" aria-controls="learning-dialog">Enlarge ↗</button></figcaption></figure>
+        <figure class="learning-figure"><div class="learning-plot-scroll" role="region" aria-label="Learning curves across sixteen environments" tabindex="0"><img id="learning-image" src="assets/learning-curves/all.svg?v=cd501a1f689d" alt="Episode returns for 9B and 35B-A3B across sixteen training environments over 200 RL steps" width="396" height="122" loading="lazy" decoding="async" draggable="false"></div></figure>
       </section>
     </section>
     <div class="section-intro" id="results-intro"><span class="section-intro-number">4</span><div class="section-intro-copy"><span class="eyebrow">FROM EXPERIENCE TO HELD-OUT ENVIRONMENTS</span><p>Experience gained through play <strong>transfers to held-out environments</strong>.</p></div></div>
@@ -177,10 +176,6 @@ Keys: hold(&quot;d&quot;, &quot;w&quot;)</pre></section></div></aside></div>
   <dialog id="game-dialog" aria-labelledby="game-title">
     <div class="game-toolbar"><div><span id="game-number" class="mono">01 / 16</span><h3 id="game-title">2D Aiming</h3></div><div class="game-actions"><span class="status" id="status" role="status">Ready to play</span><button id="pause" disabled>Pause</button><button id="reset" disabled>Restart</button><button id="perturb" disabled title="Randomize appearance, camera, scene and controls">Perturb</button><button id="close-game" aria-label="Close environment">Close ×</button></div></div>
     <div class="modal-body"><div class="modal-play"><div class="game-window" id="game-window"><img class="game-poster" id="game-poster" src="assets/base_2d_aim.webp" alt="2D Aiming preview" width="854" height="480"><div class="stage-cover" id="stage-cover"><span class="eyebrow" id="cover-caption">PLAY THE TRAINING ENVIRONMENT</span><button class="button dark" id="start">Play 2D Aiming →</button><p id="cover-note">Click to begin · Mouse & keyboard</p></div></div><div class="game-help"><p><strong>Controls</strong> <span id="controls"></span></p><p class="muted">Click inside the game to focus. Esc pauses. Restart replays the same seed. Mouse and keyboard recommended.</p></div></div><aside class="metric-sidebar" aria-label="Live environment metrics"><div class="metric-heading"><span class="eyebrow">LIVE FEEDBACK</span><span id="seed-label"></span></div><div class="metrics"><div><span>Score</span><output id="score">—</output></div><div><span>Episode reward</span><output id="episode-reward">—</output></div><div><span>Latest step reward</span><output id="step-reward">—</output></div></div><dl class="details" id="details"></dl><p class="metric-note">Native game rewards.<br>Each environment has its own score scale.</p></aside></div>
-  </dialog>
-  <dialog id="learning-dialog" aria-label="Enlarged learning curves">
-    <div class="learning-zoom-toolbar"><button type="button" id="close-learning" aria-label="Close learning curves" autofocus>Close ×</button></div>
-    <div class="learning-zoom-view" role="region" aria-label="Enlarged learning curves" tabindex="0"><img id="learning-zoom-image" alt="" draggable="false"></div>
   </dialog>
 </body>
 </html>
