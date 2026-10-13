@@ -270,7 +270,7 @@ $('copy-citation').addEventListener('click', async () => {
   }
 });
 try {
-  const response = await fetch('games.json');
+  const response = await fetch('games.json?v=71cf59d8e973');
   if (!response.ok) throw new Error('Catalog unavailable');
   catalog = await response.json();
   buildCatalog();

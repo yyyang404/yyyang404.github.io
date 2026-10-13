@@ -4,111 +4,111 @@
     "title": "2D Aiming",
     "family": "Aiming",
     "controls": "Move mouse to aim; left-click to shoot. Aim near each target's center for better precision.",
-    "preview": "assets/gym-previews/base_2d_aim.gif?v=872c6bea581b"
+    "preview": "assets/gym-previews/base_2d_aim.gif?v=358a0c94b7c9"
   },
   {
     "id": "base_2d_aim_arena",
     "title": "2D Shooting",
     "family": "Combat",
     "controls": "WASD or arrows move; mouse aims; left-click fires. Cover blocks movement and shots.",
-    "preview": "assets/gym-previews/base_2d_aim_arena.gif?v=1f3e954c0cdc"
+    "preview": "assets/gym-previews/base_2d_aim_arena.gif?v=c54952670ac4"
   },
   {
     "id": "base_2d_arcade_planar",
     "title": "2D Collect & Dodge",
     "family": "Navigation",
     "controls": "WASD or arrows move; combine keys for diagonals. Collect coins and avoid moving hazards.",
-    "preview": "assets/gym-previews/base_2d_arcade_planar.gif?v=c8baef2422c0"
+    "preview": "assets/gym-previews/base_2d_arcade_planar.gif?v=af3bcfdd2909"
   },
   {
     "id": "base_2d_drive_lane_collect",
     "title": "2D Lane Driving",
     "family": "Driving",
     "controls": "Left/right arrows or A/D steer. Collect coins across four lanes; release keys to hold your lateral position.",
-    "preview": "assets/gym-previews/base_2d_drive_lane_collect.gif?v=a62cc17a3755"
+    "preview": "assets/gym-previews/base_2d_drive_lane_collect.gif?v=b490f65bf496"
   },
   {
     "id": "base_2d_drive_planar_wasd",
     "title": "2D Circuit Driving",
     "family": "Driving",
     "controls": "WASD or arrows accelerate in screen directions. Cross checkpoint lines in order; stay within the fences.",
-    "preview": "assets/gym-previews/base_2d_drive_planar_wasd.gif?v=3cf3e467bff7"
+    "preview": "assets/gym-previews/base_2d_drive_planar_wasd.gif?v=aa444b5f3168"
   },
   {
     "id": "base_2d_platform",
     "title": "2D Platforming",
     "family": "Navigation",
     "controls": "A/D or left/right arrows move; Space, W or up arrow jumps; hold Shift to sprint. Reach flags and avoid pits and spikes.",
-    "preview": "assets/gym-previews/base_2d_platform.gif?v=2d5ffba4abb3"
+    "preview": "assets/gym-previews/base_2d_platform.gif?v=9cad75329d07"
   },
   {
     "id": "base_2d_ui_crafting",
     "title": "2D Crafting",
     "family": "UI interaction",
     "controls": "Left-click picks up or places stacks and takes output; right-click splits or places one item. The Recipe Book can autofill ingredients.",
-    "preview": "assets/gym-previews/base_2d_ui_crafting.gif?v=083c44b26b85"
+    "preview": "assets/gym-previews/base_2d_ui_crafting.gif?v=ce393796d2e1"
   },
   {
     "id": "base_3d_aim",
     "title": "3D Aiming",
     "family": "Aiming",
     "controls": "Move the mouse to aim. Left-click to shoot the active target.",
-    "preview": "assets/gym-previews/base_3d_aim.gif?v=371dbea4b94e"
+    "preview": "assets/gym-previews/base_3d_aim.gif?v=0abf20fa4d49"
   },
   {
     "id": "base_3d_combat_arena",
     "title": "3D Shooting",
     "family": "Combat",
     "controls": "WASD moves. Move the mouse to aim. Left-click fires. E reloads. Space jumps.",
-    "preview": "assets/gym-previews/base_3d_combat_arena.gif?v=c0687c8e0c79"
+    "preview": "assets/gym-previews/base_3d_combat_arena.gif?v=24b36cf2a463"
   },
   {
     "id": "base_3d_drive",
     "title": "3D Road Driving",
     "family": "Driving",
     "controls": "W / Up accelerates. S / Down brakes. A / D or Left / Right steers. Cross the checkpoints in order.",
-    "preview": "assets/gym-previews/base_3d_drive.gif?v=bd38f7264aed"
+    "preview": "assets/gym-previews/base_3d_drive.gif?v=e9974480a6bd"
   },
   {
     "id": "base_3d_drive_lane",
     "title": "3D Lane Driving",
     "family": "Driving",
     "controls": "A / D or Left / Right steers. The car moves forward automatically. Collect the road coins.",
-    "preview": "assets/gym-previews/base_3d_drive_lane.gif?v=f016d2a87e98"
+    "preview": "assets/gym-previews/base_3d_drive_lane.gif?v=5dcb67299529"
   },
   {
     "id": "base_3d_duel",
     "title": "3D Spear Duel",
     "family": "Combat",
     "controls": "WASD moves. Move the mouse to look. Hold left mouse for 0.4s, then release to thrust. Space dodges.",
-    "preview": "assets/gym-previews/base_3d_duel.gif?v=743c95d22ec4"
+    "preview": "assets/gym-previews/base_3d_duel.gif?v=522c8b5fda64"
   },
   {
     "id": "base_3d_duel_precision",
     "title": "3D Sword Duel",
     "family": "Combat",
     "controls": "WASD moves. Move the mouse to look. Center the crosshair on a nearby opponent and left-click to slash. Space dodges.",
-    "preview": "assets/gym-previews/base_3d_duel_precision.gif?v=7ed2d89c6723"
+    "preview": "assets/gym-previews/base_3d_duel_precision.gif?v=002c3cff6f29"
   },
   {
     "id": "base_3d_melee_arena",
     "title": "3D Melee Combat",
     "family": "Combat",
     "controls": "WASD moves relative to the camera. Move the mouse to orbit. Left-click slashes. Space dodges.",
-    "preview": "assets/gym-previews/base_3d_melee_arena.gif?v=b59410b6a5d0"
+    "preview": "assets/gym-previews/base_3d_melee_arena.gif?v=c2aecbd39572"
   },
   {
     "id": "base_3d_movement",
     "title": "3D Navigation",
     "family": "Navigation",
     "controls": "WASD moves. Move the mouse to look around. Reach the flag, then find its next position.",
-    "preview": "assets/gym-previews/base_3d_movement.gif?v=548547f162e0"
+    "preview": "assets/gym-previews/base_3d_movement.gif?v=7d4e345050f2"
   },
   {
     "id": "base_3d_navigate_chase",
     "title": "3D Chasing",
     "family": "Navigation",
     "controls": "WASD moves relative to the camera. Move the mouse to orbit the camera. Chase and reach the moving target.",
-    "preview": "assets/gym-previews/base_3d_navigate_chase.gif?v=2aebbabf9e6e"
+    "preview": "assets/gym-previews/base_3d_navigate_chase.gif?v=366a229a0c09"
   }
 ]
