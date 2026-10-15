@@ -36,7 +36,7 @@
     <link rel="preload" href="assets/fonts/carlito/Carlito-Bold.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="preload" href="assets/fonts/product-sans/ProductSans-Bold.woff2" as="font" type="font/woff2" crossorigin />
     <!-- End generated font preloads -->
-    <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="stylesheet" href="stylesheet.css?v=ae60630f0242" />
   </head>
   <body>
     <div class="page-shell">
@@ -119,6 +119,7 @@
         <tr>
           <td>
             <ul class="news-list" role="list">
+              <li><span class="news-date">10/2026</span> We released <a href="https://player-1-project.github.io/" target="_blank" rel="noopener noreferrer">Player-1</a>, a post-training framework for learning game control from synthetic experience. Check the <a href="https://arxiv.org/abs/2610.20584" target="_blank" rel="noopener noreferrer">paper</a>, <a href="https://player-1-project.github.io/" target="_blank" rel="noopener noreferrer">project page</a>, and <a href="https://github.com/TencentARC/Player-1" target="_blank" rel="noopener noreferrer">GitHub</a>.</li>
               <li><span class="news-date">09/2026</span> <a href="https://gameworld-project.github.io/" target="_blank" rel="noopener noreferrer">GameWorld</a> received the <strong class="award-note">Best Paper Runner-Up Award</strong> and invited to give a <a href="assets/pdf/projects/gameworld-slides.pdf" target="_blank" rel="noopener noreferrer">spotlight talk</a> at the <a href="https://mda-workshop.allen.ai/" target="_blank" rel="noopener noreferrer">MDA Workshop @ <span class="nowrap">ECCV 2026</span></a>. </li>
               <li><span class="news-date">08/2026</span> Received the <strong class="award-note">Research Achievement Award</strong> from NUS School of Computing.</li>
               <li><span class="news-date">06/2026</span> <a href="https://gameworld-project.github.io/" target="_blank" rel="noopener noreferrer">GameWorld</a> was accepted to <strong><span class="nowrap">ECCV 2026</span></strong> and used in <a href="https://lf3-static.bytednsdoc.com/obj/eden-cn/lapzild-tss/ljhwZthlaukjlkulzlp/seed2.1/Seed2_1_Model_Card.pdf" target="_blank" rel="noopener noreferrer">Seed-2.1 Model Card</a>. </li>
@@ -152,17 +153,23 @@
         <tr class="pub-item">
           <td width="28%">
             <a class="paper-thumb paper-thumb--image" href="https://player-1-project.github.io/" target="_blank" rel="noopener noreferrer" aria-label="View the Player-1 project page">
-              <img class="paper-thumb-image" width="1600" height="900" loading="lazy" decoding="async" src="assets/img/projects/player1-gym-poster.png?v=8796322dd6c9" alt="Player-1 Gym: synthetic game environments, environment randomization, and the policy training loop" />
+              <picture class="paper-thumb-picture">
+                <source media="(prefers-reduced-motion: reduce)" srcset="assets/img/projects/player1-gym-poster.png?v=8796322dd6c9" />
+                <img class="paper-thumb-image" width="640" height="360" loading="lazy" decoding="async" src="assets/img/projects/player1-gym-demo.gif?v=ab9bb8da2788" alt="Player-1 Gym: synthetic 2D and 3D game environments and training overview" />
+              </picture>
             </a>
           </td>
           <td width="72%">
             <p>
-              <heading role="heading" aria-level="3" class="paper-title-split"><span class="paper-title-name">Player-1:</span><span class="paper-title-subtitle">Learning to Play from Synthetic Experience</span></heading><br />
+              <heading role="heading" aria-level="3">Player-1: Learning to Play from Synthetic Experience</heading><br />
               <span class="author-line"><span class="author-names-full"><span class="author-highlight">Mingyu Ouyang</span>, Yiran Wang, Siyuan Hu, Xingyilang Yin, Huiqiang Sun, Guangzhi Wang, Junfu Pu, Cheng Cheng, Honghao Chen, Ying Shan, Mike Zheng Shou<sup class="author-marker" title="Corresponding author">†</sup>, Hwee Tou Ng<sup class="author-marker" title="Corresponding author">†</sup></span><span class="author-names-short"><span class="nowrap"><span class="author-highlight">M. Ouyang</span></span>, <span class="nowrap">Y. Wang</span>, <span class="nowrap">S. Hu</span>, <span class="nowrap">X. Yin</span>, <span class="nowrap">H. Sun</span>, <span class="nowrap">G. Wang</span>, <span class="nowrap">J. Pu</span>, <span class="nowrap">C. Cheng</span>, <span class="nowrap">H. Chen</span>, <span class="nowrap">Y. Shan</span>, <span class="nowrap">M. Z. Shou<sup class="author-marker" title="Corresponding author">†</sup></span>, <span class="nowrap">H. T. Ng<sup class="author-marker" title="Corresponding author">†</sup></span></span></span><br />
               <span class="paper-meta">Under review, 2026</span>
             </p>
             <p class="paper-links">
-              <span class="paper-link"><a href="https://player-1-project.github.io/" target="_blank" rel="noopener noreferrer">🌐 project page</a></span>
+              <span class="paper-link"><a href="https://arxiv.org/abs/2610.20584" target="_blank" rel="noopener noreferrer">📃 paper</a> <span aria-hidden="true">|</span></span>
+              <span class="paper-link"><a href="https://player-1-project.github.io/" target="_blank" rel="noopener noreferrer">🌐 project page</a> <span aria-hidden="true">|</span></span>
+              <span class="paper-link"><a href="https://github.com/TencentARC/Player-1" target="_blank" rel="noopener noreferrer">🏠 github</a> <span aria-hidden="true">|</span></span>
+              <span class="paper-link"><a href="https://player-1-project.github.io/assets/introduction/overview.mp4" target="_blank" rel="noopener noreferrer">▶️ introduction</a></span>
             </p>
             <p class="paper-summary">Synthetic environments improve transferable agent capabilities: An agentic post-training framework that learns general game control beyond supervised demonstrations.</p>
           </td>
@@ -267,7 +274,7 @@
           </td>
           <td width="72%">
             <p>
-              <heading role="heading" aria-level="3" class="paper-title-split"><span class="paper-title-name">AssistGUI:</span><span class="paper-title-subtitle">Task-Oriented PC Graphical User Interface Automation</span></heading><br />
+              <heading role="heading" aria-level="3">AssistGUI: Task-Oriented PC Graphical User Interface Automation</heading><br />
               <span class="author-line"><span class="author-names-full">Difei Gao, Lei Ji, Zechen Bai, <span class="author-highlight">Mingyu Ouyang</span>, Peiran Li, Dongxing Mao, Qinchen Wu, Weichen Zhang, Peiyi Wang, Xiangwu Guo, Hengxu Wang, Luowei Zhou, Mike Zheng Shou<sup class="author-marker" title="Corresponding author">†</sup></span><span class="author-names-short"><span class="nowrap">D. Gao</span>, <span class="nowrap">L. Ji</span>, <span class="nowrap">Z. Bai</span>, <span class="nowrap"><span class="author-highlight">M. Ouyang</span></span>, <span class="nowrap">P. Li</span>, <span class="nowrap">D. Mao</span>, <span class="nowrap">Q. Wu</span>, <span class="nowrap">W. Zhang</span>, <span class="nowrap">P. Wang</span>, <span class="nowrap">X. Guo</span>, <span class="nowrap">H. Wang</span>, <span class="nowrap">L. Zhou</span>, <span class="nowrap">M. Z. Shou<sup class="author-marker" title="Corresponding author">†</sup></span></span></span><br />
               <span class="paper-meta"><span class="paper-venue"><span class="nowrap">CVPR 2024</span></span></span>
             </p>

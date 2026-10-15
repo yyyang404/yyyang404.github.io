@@ -618,7 +618,12 @@ a:focus-visible,
   font-size: 13px;
 }
 
+.pub-item .author-line {
+  margin-top: 6px;
+}
+
 .pub-item .paper-meta {
+  margin-top: var(--paper-meta-gap);
   font-weight: 700;
 }
 
@@ -676,8 +681,13 @@ a:focus-visible,
 }
 
 .pub-item td > p:first-child {
+  display: grid;
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.pub-item td > p:first-child > br {
+  display: none;
 }
 
 .detail-title {
@@ -804,15 +814,6 @@ a:focus-visible,
 
   #publications + .stack-table .paper-thumb {
     width: min(100%, 360px);
-  }
-
-  .pub-item td > p:first-child {
-    display: grid;
-    row-gap: 6px;
-  }
-
-  .pub-item td > p:first-child > br {
-    display: none;
   }
 
   .pub-item .author-line,
