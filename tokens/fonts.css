@@ -1,0 +1,39 @@
+@font-face {
+  font-family: "XCharterWeb";
+  src: url("../assets/fonts/xcharter/XCharter-Roman.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "XCharterWeb";
+  src: url("../assets/fonts/xcharter/XCharter-Italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "CarlitoWeb";
+  src: url("../assets/fonts/carlito/Carlito-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "CarlitoWeb";
+  src: url("../assets/fonts/carlito/Carlito-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "ProductSansWeb";
+  src: url("../assets/fonts/product-sans/ProductSans-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: block;
+}
