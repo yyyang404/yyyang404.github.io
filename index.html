@@ -15,19 +15,62 @@
     <title>Mingyu Ouyang</title>
     <meta
       name="description"
-      content="Mingyu Ouyang's homepage."
+      content="Mingyu (Myles) Ouyang is a CS Ph.D. student at NUS Show Lab researching multimodal digital and game agents."
     />
     <link rel="icon" href="/favicon.ico" sizes="any" />
     <link rel="icon" type="image/png" href="/assets/img/favicon-48.png" sizes="48x48" />
     <meta name="application-name" content="Mingyu Ouyang" />
     <meta property="og:site_name" content="Mingyu Ouyang" />
+    <meta property="og:title" content="Mingyu (Myles) Ouyang" />
+    <meta property="og:description" content="CS Ph.D. student at National University of Singapore (Show Lab). Multimodal digital &amp; game agents." />
+    <meta property="og:url" content="https://mingyuouyang.com/" />
+    <meta property="og:image" content="https://mingyuouyang.com/assets/img/portrait.png" />
+    <meta property="og:type" content="profile" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Mingyu (Myles) Ouyang" />
+    <meta name="twitter:description" content="CS Ph.D. student at NUS Show Lab. Multimodal digital &amp; game agents." />
+    <meta name="twitter:image" content="https://mingyuouyang.com/assets/img/portrait.png" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "WebSite",
+        "@type": "Person",
         "name": "Mingyu Ouyang",
-        "alternateName": "Mingyu Ouyang Homepage",
-        "url": "https://mingyuouyang.com/"
+        "alternateName": ["Myles Ouyang", "欧阳铭禹"],
+        "url": "https://mingyuouyang.com/",
+        "image": "https://mingyuouyang.com/assets/img/portrait.png",
+        "jobTitle": "Ph.D. Student in Computer Science",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "National University of Singapore",
+          "url": "https://www.nus.edu.sg/"
+        },
+        "alumniOf": [
+          {
+            "@type": "CollegeOrUniversity",
+            "name": "National University of Singapore",
+            "url": "https://www.nus.edu.sg/"
+          },
+          {
+            "@type": "CollegeOrUniversity",
+            "name": "Wuhan University",
+            "url": "https://www.whu.edu.cn/"
+          }
+        ],
+        "knowsAbout": [
+          "Multimodal Agents",
+          "Computer-Use Agents",
+          "Game Agents",
+          "GUI Automation",
+          "Artificial Intelligence",
+          "Deep Learning",
+          "Computer Vision"
+        ],
+        "sameAs": [
+          "https://scholar.google.com/citations?user=GoYztjwAAAAJ&hl",
+          "https://github.com/yyyang404",
+          "https://www.linkedin.com/in/mingyu-ouyang-418a54286/",
+          "https://x.com/OuyyyangMingyu"
+        ]
       }
     </script>
     <!-- Generated font preloads: tools/fonts/build.py -->
@@ -36,11 +79,13 @@
     <link rel="preload" href="assets/fonts/carlito/Carlito-Bold.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="preload" href="assets/fonts/product-sans/ProductSans-Bold.woff2" as="font" type="font/woff2" crossorigin />
     <!-- End generated font preloads -->
-    <link rel="stylesheet" href="stylesheet.css?v=ae60630f0242" />
+    <link rel="stylesheet" href="stylesheet.css?v=9ece448c6705" />
+    <script defer src="assets/js/project-previews.js?v=b4d4ad7e10b0"></script>
   </head>
   <body>
     <div class="page-shell">
-      <p class="page-heading"><pageheading role="heading" aria-level="1">Mingyu Ouyang</pageheading></p>
+      <div id="about"></div>
+      <h1 class="page-heading">Mingyu Ouyang</h1>
       <p class="page-subtitle">CS Ph.D. Student, National University of Singapore</p>
 
       <table class="full-table stack-table intro-layout" cellspacing="0" cellpadding="0">
@@ -80,8 +125,7 @@
             </p>
             <p>
               I am with
-              <a href="https://sites.google.com/view/showlab/home" target="_blank" rel="noopener noreferrer">Show Lab, NUS</a> and <a href="https://arc.tencent.com/" target="_blank" rel="noopener noreferrer">ARC Lab, Tencent IEG</a>
-              on multimodal digital agent research. I previously interned at <a href="https://www.sensetime.com/en" target="_blank" rel="noopener noreferrer">SenseTime Research Singapore</a> and <a href="https://www.tencent.com/products/tencent-map/" target="_blank" rel="noopener noreferrer">Tencent Map, Beijing</a>.
+              <a href="https://sites.google.com/view/showlab/home" target="_blank" rel="noopener noreferrer">Show Lab, NUS</a> on multimodal digital agent research. I previously interned at <a href="https://arc.tencent.com/" target="_blank" rel="noopener noreferrer">ARC Lab, Tencent</a>, <a href="https://www.sensetime.com/en" target="_blank" rel="noopener noreferrer">SenseTime Research Singapore</a> and <a href="https://www.tencent.com/products/tencent-map/" target="_blank" rel="noopener noreferrer">Tencent Map, Beijing</a>.
             </p>
             <p>
               I am interested in the interaction and productivity gains enabled by digital (computer-use/game) agents.
@@ -98,9 +142,9 @@
                 Previously, I worked on low-level vision training on-device image restoration models for cameras. I was experienced with AI image signal processing (AI-ISP), image compression and restoration.
               </span>
             </p>
-            <!-- <p class="opportunity-note"> -->
-              <!-- [Opportunity Note] I am currently looking for research internship working on multimodal agents (including computer-use, game, etc) starting summer 2026. Feel free to contact me! -->
-            <!-- </p> -->
+            <!-- <p class="opportunity-note">
+              Open to research collaborations and discussions.
+            </p> -->
             <p class="contact-line">
               Email: <a href="mailto:yyyangwhu@gmail.com">yyyangwhu@gmail.com</a>
             </p>
@@ -112,18 +156,18 @@
 
       <table class="full-table section-heading" cellspacing="0" cellpadding="0" id="news">
         <tr>
-          <td><sectionheading role="heading" aria-level="2">Updates</sectionheading></td>
+          <td><h2 class="section-title">Updates</h2></td>
         </tr>
       </table>
       <table class="full-table section-content" cellspacing="0" cellpadding="0">
         <tr>
           <td>
             <ul class="news-list" role="list">
-              <li><span class="news-date">10/2026</span> We released <a href="https://player-1-project.github.io/" target="_blank" rel="noopener noreferrer">Player-1</a>, a post-training framework for learning game control from synthetic experience. Check the <a href="https://arxiv.org/abs/2610.20584" target="_blank" rel="noopener noreferrer">paper</a>, <a href="https://player-1-project.github.io/" target="_blank" rel="noopener noreferrer">project page</a>, and <a href="https://github.com/TencentARC/Player-1" target="_blank" rel="noopener noreferrer">GitHub</a>.</li>
+              <li><span class="news-date">10/2026</span> We released <a href="https://player-1-project.github.io/" target="_blank" rel="noopener noreferrer">Player-1</a>, a post-training framework for learning gameplay control from synthetic experience. Check the <a href="https://arxiv.org/abs/2610.20584" target="_blank" rel="noopener noreferrer">paper</a>, <a href="https://player-1-project.github.io/" target="_blank" rel="noopener noreferrer">project page</a>, and <a href="https://github.com/TencentARC/Player-1" target="_blank" rel="noopener noreferrer">GitHub</a>.</li>
               <li><span class="news-date">09/2026</span> <a href="https://gameworld-project.github.io/" target="_blank" rel="noopener noreferrer">GameWorld</a> received the <strong class="award-note">Best Paper Runner-Up Award</strong> and invited to give a <a href="assets/pdf/projects/gameworld-slides.pdf" target="_blank" rel="noopener noreferrer">spotlight talk</a> at the <a href="https://mda-workshop.allen.ai/" target="_blank" rel="noopener noreferrer">MDA Workshop @ <span class="nowrap">ECCV 2026</span></a>. </li>
               <li><span class="news-date">08/2026</span> Received the <strong class="award-note">Research Achievement Award</strong> from NUS School of Computing.</li>
               <li><span class="news-date">06/2026</span> <a href="https://gameworld-project.github.io/" target="_blank" rel="noopener noreferrer">GameWorld</a> was accepted to <strong><span class="nowrap">ECCV 2026</span></strong> and used in <a href="https://lf3-static.bytednsdoc.com/obj/eden-cn/lapzild-tss/ljhwZthlaukjlkulzlp/seed2.1/Seed2_1_Model_Card.pdf" target="_blank" rel="noopener noreferrer">Seed-2.1 Model Card</a>. </li>
-              <li><span class="news-date">04/2026</span> We released <a href="https://arxiv.org/abs/2604.07429" target="_blank" rel="noopener noreferrer">GameWorld</a>, a standardized benchmark for game agents. Check <a href="https://gameworld-project.github.io/" target="_blank" rel="noopener noreferrer">Project Page</a>, <a href="https://arxiv.org/abs/2604.07429" target="_blank" rel="noopener noreferrer">Technical Report</a>, and <a href="https://github.com/gameworld-project/gameworld" target="_blank" rel="noopener noreferrer">GitHub</a>.</li>
+              <li><span class="news-date">04/2026</span> We released <a href="https://arxiv.org/abs/2604.07429" target="_blank" rel="noopener noreferrer">GameWorld</a>, a standardized benchmark for game agents. Check <a href="https://gameworld-project.github.io/" target="_blank" rel="noopener noreferrer">project page</a>, <a href="https://arxiv.org/abs/2604.07429" target="_blank" rel="noopener noreferrer">technical report</a>, and <a href="https://github.com/gameworld-project/gameworld" target="_blank" rel="noopener noreferrer">gitHub</a>.</li>
               <li><span class="news-date">03/2026</span> <a href="https://arxiv.org/abs/2601.03928" target="_blank" rel="noopener noreferrer">FocusUI</a> was accepted to <strong><span class="nowrap">CVPR 2026</span></strong> and received the <strong class="award-note">Compute Transparency Champion Award</strong>.</li>
             </ul>
             <details class="news-archive">
@@ -144,7 +188,7 @@
 
       <table class="full-table section-heading" cellspacing="0" cellpadding="0" id="publications">
         <tr>
-          <td><sectionheading role="heading" aria-level="2">Publications</sectionheading> <span class="paper-note publication-notes">(* equal contribution; † corresponding author)</span></td>
+          <td><h2 class="section-title">Publications</h2> <span class="paper-note publication-notes">(* equal contribution; † corresponding author)</span></td>
         </tr>
       </table>
 
@@ -155,23 +199,24 @@
             <a class="paper-thumb paper-thumb--image" href="https://player-1-project.github.io/" target="_blank" rel="noopener noreferrer" aria-label="View the Player-1 project page">
               <picture class="paper-thumb-picture">
                 <source media="(prefers-reduced-motion: reduce)" srcset="assets/img/projects/player1-gym-poster.png?v=8796322dd6c9" />
-                <img class="paper-thumb-image" width="640" height="360" loading="lazy" decoding="async" src="assets/img/projects/player1-gym-demo.gif?v=0fd7fbedcd4b" alt="Player-1 Gym: synthetic 2D and 3D game environments and training overview" />
+                <img class="paper-thumb-image" width="640" height="360" loading="lazy" decoding="async" src="assets/img/projects/player1-gym-demo-preview.jpg?v=a76ab3a4ab67" alt="Player-1 Gym: synthetic 2D and 3D game environments and training overview" />
               </picture>
+              <video class="paper-thumb-video" width="640" height="360" autoplay loop muted playsinline preload="none" data-src="assets/video/previews/player1-gym-demo.mp4?v=27be8cb964b5" aria-hidden="true" tabindex="-1" hidden></video>
             </a>
           </td>
           <td width="72%">
-            <p>
-              <heading role="heading" aria-level="3">Player-1: Learning to Play from Synthetic Experience</heading><br />
-              <span class="author-line"><span class="author-names-full"><span class="author-highlight">Mingyu Ouyang</span>, Yiran Wang, Siyuan Hu, Xingyilang Yin, Huiqiang Sun, Guangzhi Wang, Junfu Pu, Cheng Cheng, Honghao Chen, Ying Shan, Mike Zheng Shou<sup class="author-marker" title="Corresponding author">†</sup>, Hwee Tou Ng<sup class="author-marker" title="Corresponding author">†</sup></span><span class="author-names-short"><span class="nowrap"><span class="author-highlight">M. Ouyang</span></span>, <span class="nowrap">Y. Wang</span>, <span class="nowrap">S. Hu</span>, <span class="nowrap">X. Yin</span>, <span class="nowrap">H. Sun</span>, <span class="nowrap">G. Wang</span>, <span class="nowrap">J. Pu</span>, <span class="nowrap">C. Cheng</span>, <span class="nowrap">H. Chen</span>, <span class="nowrap">Y. Shan</span>, <span class="nowrap">M. Z. Shou<sup class="author-marker" title="Corresponding author">†</sup></span>, <span class="nowrap">H. T. Ng<sup class="author-marker" title="Corresponding author">†</sup></span></span></span><br />
+            <div class="publication-header">
+              <h3 class="paper-title">Player-1: Learning to Play from Synthetic Experience</h3>
+              <span class="author-line"><span class="author-names-full"><span class="author-highlight">Mingyu Ouyang</span>, Yiran Wang, Siyuan Hu, Xingyilang Yin, Huiqiang Sun, Guangzhi Wang, Junfu Pu, Cheng Cheng, Honghao Chen, Ying Shan, Mike Zheng Shou<sup class="author-marker" title="Corresponding author">†</sup>, Hwee Tou Ng<sup class="author-marker" title="Corresponding author">†</sup></span><span class="author-names-short"><span class="nowrap"><span class="author-highlight">M. Ouyang</span></span>, <span class="nowrap">Y. Wang</span>, <span class="nowrap">S. Hu</span>, <span class="nowrap">X. Yin</span>, <span class="nowrap">H. Sun</span>, <span class="nowrap">G. Wang</span>, <span class="nowrap">J. Pu</span>, <span class="nowrap">C. Cheng</span>, <span class="nowrap">H. Chen</span>, <span class="nowrap">Y. Shan</span>, <span class="nowrap">M. Z. Shou<sup class="author-marker" title="Corresponding author">†</sup></span>, <span class="nowrap">H. T. Ng<sup class="author-marker" title="Corresponding author">†</sup></span></span></span>
               <span class="paper-meta">Under review, 2026</span>
-            </p>
+            </div>
             <p class="paper-links">
               <span class="paper-link"><a href="https://arxiv.org/abs/2610.20584" target="_blank" rel="noopener noreferrer">📃 paper</a> <span aria-hidden="true">|</span></span>
               <span class="paper-link"><a href="https://player-1-project.github.io/" target="_blank" rel="noopener noreferrer">🌐 project page</a> <span aria-hidden="true">|</span></span>
               <span class="paper-link"><a href="https://github.com/TencentARC/Player-1" target="_blank" rel="noopener noreferrer">🏠 github</a> <span aria-hidden="true">|</span></span>
               <span class="paper-link"><a href="https://player-1-project.github.io/assets/introduction/overview.mp4" target="_blank" rel="noopener noreferrer">▶️ introduction</a></span>
             </p>
-            <p class="paper-summary">Synthetic environments improve transferable agent capabilities: Player-1 presents an agentic post-training framework that learns general game control beyond supervised demonstrations.</p>
+            <p class="paper-summary">Synthetic environments improve transferable agent capabilities: Player-1 is an agentic post-training framework that learns general gameplay control beyond supervised demonstrations.</p>
           </td>
         </tr>
         <tr class="pub-item">
@@ -179,16 +224,18 @@
             <a class="paper-thumb paper-thumb--image" href="https://gameworld-project.github.io/" target="_blank" rel="noopener noreferrer" aria-label="View the GameWorld project page">
               <picture class="paper-thumb-picture">
                 <source media="(prefers-reduced-motion: reduce)" srcset="assets/img/projects/gameworld-teaser.jpg" />
-                <img class="paper-thumb-image" width="640" height="360" loading="lazy" decoding="async" src="assets/img/projects/gameworld-demo.gif?v=9437157ff938" alt="GameWorld demo showing multimodal agents interacting across browser games" />
+                <img class="paper-thumb-image" width="640" height="360" loading="lazy" decoding="async" src="assets/img/projects/gameworld-demo-preview.jpg?v=8600b34ee1ca" alt="GameWorld demo showing multimodal agents interacting across browser games" />
               </picture>
+              <video class="paper-thumb-video" width="640" height="360" autoplay loop muted playsinline preload="none" data-src="assets/video/previews/gameworld-demo.mp4?v=d94b0a2c6112" aria-hidden="true" tabindex="-1" hidden></video>
             </a>
           </td>
           <td width="72%">
-            <p>
-              <heading role="heading" aria-level="3" class="paper-title-split"><span class="paper-title-name">GameWorld:</span><span class="paper-title-subtitle">Towards Standardized and Verifiable Evaluation of Multimodal Game Agents</span></heading><br />
-              <span class="author-line"><span class="author-names-full"><span class="author-highlight">Mingyu Ouyang*</span>, Siyuan Hu*, Kevin Qinghong Lin, Hwee Tou Ng<sup class="author-marker" title="Corresponding author">†</sup>, Mike Zheng Shou<sup class="author-marker" title="Corresponding author">†</sup></span><span class="author-names-short"><span class="nowrap"><span class="author-highlight">M. Ouyang*</span></span>, <span class="nowrap">S. Hu*</span>, <span class="nowrap">K. Q. Lin</span>, <span class="nowrap">H. T. Ng<sup class="author-marker" title="Corresponding author">†</sup></span>, <span class="nowrap">M. Z. Shou<sup class="author-marker" title="Corresponding author">†</sup></span></span></span><br />
+            <div class="publication-header">
+              <h3 class="paper-title paper-title-split"><span class="paper-title-name">GameWorld:</span><span class="paper-title-subtitle">Towards Standardized and Verifiable Evaluation of Multimodal Game Agents</span></h3>
+              <span class="author-line"><span class="author-names-full"><span class="author-highlight">Mingyu Ouyang*</span>, Siyuan Hu*, Kevin Qinghong Lin, Hwee Tou Ng<sup class="author-marker" title="Corresponding author">†</sup>, Mike Zheng Shou<sup class="author-marker" title="Corresponding author">†</sup></span><span class="author-names-short"><span class="nowrap"><span class="author-highlight">M. Ouyang*</span></span>, <span class="nowrap">S. Hu*</span>, <span class="nowrap">K. Q. Lin</span>, <span class="nowrap">H. T. Ng<sup class="author-marker" title="Corresponding author">†</sup></span>, <span class="nowrap">M. Z. Shou<sup class="author-marker" title="Corresponding author">†</sup></span></span></span>
               <span class="paper-meta"><span class="paper-venue"><span class="nowrap">ECCV 2026</span></span>, <span class="award-note award-note--inline">Best Paper Runner-Up Award, Multimodal Digital Agents Workshop @ <span class="nowrap">ECCV 2026</span></span></span>
-            </p>
+              <span class="paper-adoption-note">🌟 Adopted for multimodal agent evaluation in <a href="https://lf3-static.bytednsdoc.com/obj/eden-cn/lapzild-tss/ljhwZthlaukjlkulzlp/seed2.1/Seed2_1_Model_Card.pdf" target="_blank" rel="noopener noreferrer">ByteDance Seed-2.1</a> and <a href="https://arxiv.org/abs/2610.02200" target="_blank" rel="noopener noreferrer">VISTA</a></span>
+            </div>
             <p class="paper-links"><span class="paper-link"><a href="https://arxiv.org/abs/2604.07429" target="_blank" rel="noopener noreferrer">📃 paper</a> <span aria-hidden="true">|</span></span>
               <span class="paper-link"><a href="https://gameworld-project.github.io/" target="_blank" rel="noopener noreferrer">🌐 project page</a> <span aria-hidden="true">|</span></span>
               <span class="paper-link"><a href="https://github.com/gameworld-project/gameworld" target="_blank" rel="noopener noreferrer">🏠 github</a> <span aria-hidden="true">|</span></span>
@@ -203,22 +250,23 @@
             <a class="paper-thumb paper-thumb--image" href="https://showlab.github.io/FocusUI/" target="_blank" rel="noopener noreferrer" aria-label="View the FocusUI project page">
               <picture class="paper-thumb-picture">
                 <source media="(prefers-reduced-motion: reduce)" srcset="assets/img/projects/focusui-teaser.jpg" />
-                <img class="paper-thumb-image" width="640" height="360" loading="lazy" decoding="async" src="assets/img/projects/focusui-demo.gif?v=fe54b7563111" alt="Two FocusUI examples progressing from original interfaces to saliency maps, masked tokens, and animated clicks on target buttons" />
+                <img class="paper-thumb-image" width="640" height="360" loading="lazy" decoding="async" src="assets/img/projects/focusui-demo-preview.jpg?v=e2e3874fa20f" alt="Two FocusUI examples progressing from original interfaces to saliency maps, masked tokens, and animated clicks on target buttons" />
               </picture>
+              <video class="paper-thumb-video" width="640" height="360" autoplay loop muted playsinline preload="none" data-src="assets/video/previews/focusui-demo.mp4?v=abec218b96e7" aria-hidden="true" tabindex="-1" hidden></video>
             </a>
           </td>
           <td width="72%">
-            <p>
-              <heading role="heading" aria-level="3" class="paper-title-split"><span class="paper-title-name">FocusUI:</span><span class="paper-title-subtitle">Efficient UI Grounding via Position-Preserving Visual Token Selection</span></heading><br />
-              <span class="author-line"><span class="author-names-full"><span class="author-highlight">Mingyu Ouyang</span>, Kevin Qinghong Lin, Mike Zheng Shou<sup class="author-marker" title="Corresponding author">†</sup>, Hwee Tou Ng<sup class="author-marker" title="Corresponding author">†</sup></span><span class="author-names-short"><span class="nowrap"><span class="author-highlight">M. Ouyang</span></span>, <span class="nowrap">K. Q. Lin</span>, <span class="nowrap">M. Z. Shou<sup class="author-marker" title="Corresponding author">†</sup></span>, <span class="nowrap">H. T. Ng<sup class="author-marker" title="Corresponding author">†</sup></span></span></span><br />
+            <div class="publication-header">
+              <h3 class="paper-title paper-title-split"><span class="paper-title-name">FocusUI:</span><span class="paper-title-subtitle">Efficient UI Grounding via Position-Preserving Visual Token Selection</span></h3>
+              <span class="author-line"><span class="author-names-full"><span class="author-highlight">Mingyu Ouyang</span>, Kevin Qinghong Lin, Mike Zheng Shou<sup class="author-marker" title="Corresponding author">†</sup>, Hwee Tou Ng<sup class="author-marker" title="Corresponding author">†</sup></span><span class="author-names-short"><span class="nowrap"><span class="author-highlight">M. Ouyang</span></span>, <span class="nowrap">K. Q. Lin</span>, <span class="nowrap">M. Z. Shou<sup class="author-marker" title="Corresponding author">†</sup></span>, <span class="nowrap">H. T. Ng<sup class="author-marker" title="Corresponding author">†</sup></span></span></span>
               <span class="paper-meta"><span class="paper-venue"><span class="nowrap">CVPR 2026</span></span>, <span class="award-note award-note--inline">CVPR Compute Transparency Champion Award</span></span>
-            </p>
+            </div>
             <p class="paper-links"><span class="paper-link"><a href="https://arxiv.org/abs/2601.03928" target="_blank" rel="noopener noreferrer">📃 paper</a> <span aria-hidden="true">|</span></span>
               <span class="paper-link"><a href="https://showlab.github.io/FocusUI/" target="_blank" rel="noopener noreferrer">🌐 project page</a> <span aria-hidden="true">|</span></span>
               <span class="paper-link"><a href="https://github.com/showlab/FocusUI" target="_blank" rel="noopener noreferrer">🏠 github</a> <span aria-hidden="true">|</span></span>
               <span class="paper-link"><a href="https://huggingface.co/datasets/yyyang/FocusUI-Training-Data" target="_blank" rel="noopener noreferrer">🤗 dataset</a> <span aria-hidden="true">|</span></span>
               <span class="paper-link"><a href="assets/pdf/projects/focusui-poster.pdf" target="_blank" rel="noopener noreferrer">🖼️ poster</a></span></p>
-            <p class="paper-summary">Makes UI agents' perception more efficient: FocusUI selects instruction-relevant visual tokens for low-cost UI grounding.</p>
+            <p class="paper-summary">Adapts VLM perception more efficient for GUI agents: FocusUI selects instruction-relevant visual tokens for low-cost UI grounding.</p>
           </td>
         </tr>
         <tr class="pub-item">
@@ -226,16 +274,17 @@
             <a class="paper-thumb paper-thumb--image" href="https://arxiv.org/abs/2512.20292" target="_blank" rel="noopener noreferrer" aria-label="Read the SlideTailor paper">
               <picture class="paper-thumb-picture">
                 <source media="(prefers-reduced-motion: reduce)" srcset="assets/img/projects/slidetailor-teaser.jpg" />
-                <img class="paper-thumb-image" width="640" height="360" loading="lazy" decoding="async" src="assets/img/projects/slidetailor-teaser.gif?v=72bf411f0837" alt="SlideTailor workflow: paper and preferences become slides, a speech script, and a video presentation" />
+                <img class="paper-thumb-image" width="640" height="360" loading="lazy" decoding="async" src="assets/img/projects/slidetailor-teaser-preview.jpg?v=76d535197ffe" alt="SlideTailor workflow: paper and preferences become slides, a speech script, and a video presentation" />
               </picture>
+              <video class="paper-thumb-video" width="640" height="360" autoplay loop muted playsinline preload="none" data-src="assets/video/previews/slidetailor-teaser.mp4?v=e8d99a164dbb" aria-hidden="true" tabindex="-1" hidden></video>
             </a>
           </td>
           <td width="72%">
-            <p>
-              <heading role="heading" aria-level="3" class="paper-title-split"><span class="paper-title-name">SlideTailor:</span><span class="paper-title-subtitle">Personalized Presentation Slide Generation for Scientific Papers</span></heading><br />
-              <span class="author-line"><span class="author-names-full">Wenzheng Zeng*, <span class="author-highlight">Mingyu Ouyang*</span>, Langyuan Cui*, Hwee Tou Ng<sup class="author-marker" title="Corresponding author">†</sup></span><span class="author-names-short"><span class="nowrap">W. Zeng*</span>, <span class="nowrap"><span class="author-highlight">M. Ouyang*</span></span>, <span class="nowrap">L. Cui*</span>, <span class="nowrap">H. T. Ng<sup class="author-marker" title="Corresponding author">†</sup></span></span></span><br />
+            <div class="publication-header">
+              <h3 class="paper-title paper-title-split"><span class="paper-title-name">SlideTailor:</span><span class="paper-title-subtitle">Personalized Presentation Slide Generation for Scientific Papers</span></h3>
+              <span class="author-line"><span class="author-names-full">Wenzheng Zeng*, <span class="author-highlight">Mingyu Ouyang*</span>, Langyuan Cui*, Hwee Tou Ng<sup class="author-marker" title="Corresponding author">†</sup></span><span class="author-names-short"><span class="nowrap">W. Zeng*</span>, <span class="nowrap"><span class="author-highlight">M. Ouyang*</span></span>, <span class="nowrap">L. Cui*</span>, <span class="nowrap">H. T. Ng<sup class="author-marker" title="Corresponding author">†</sup></span></span></span>
               <span class="paper-meta"><span class="paper-venue"><span class="nowrap">AAAI 2026</span></span></span>
-            </p>
+            </div>
             <p class="paper-links"><span class="paper-link"><a href="https://arxiv.org/abs/2512.20292" target="_blank" rel="noopener noreferrer">📃 paper</a> <span aria-hidden="true">|</span></span>
               <span class="paper-link"><a href="https://github.com/nusnlp/SlideTailor" target="_blank" rel="noopener noreferrer">🏠 github</a> <span aria-hidden="true">|</span></span>
               <span class="paper-link"><a href="https://huggingface.co/datasets/yyyang/SlideTailor-PSP-dataset" target="_blank" rel="noopener noreferrer">🤗 dataset</a></span></p>
@@ -247,16 +296,17 @@
             <a class="paper-thumb paper-thumb--image" href="https://computer-use-ootb.github.io" target="_blank" rel="noopener noreferrer" aria-label="View the Computer Use project page">
               <picture class="paper-thumb-picture">
                 <source media="(prefers-reduced-motion: reduce)" srcset="assets/img/projects/dawn-gui-agent-teaser.jpg" />
-                <img class="paper-thumb-image" width="640" height="360" loading="lazy" decoding="async" src="assets/img/projects/computer-use-oob-demo.gif" alt="Computer Use out-of-the-box demo controlling a desktop browser from a mobile instruction" />
+                <img class="paper-thumb-image" width="640" height="360" loading="lazy" decoding="async" src="assets/img/projects/computer-use-oob-demo-preview.jpg?v=d4be8f217c4f" alt="Computer Use out-of-the-box demo controlling a desktop browser from a mobile instruction" />
               </picture>
+              <video class="paper-thumb-video" width="640" height="360" autoplay loop muted playsinline preload="none" data-src="assets/video/previews/computer-use-oob-demo.mp4?v=6383161aec21" aria-hidden="true" tabindex="-1" hidden></video>
             </a>
           </td>
           <td width="72%">
-            <p>
-              <heading role="heading" aria-level="3" class="paper-title-split"><span class="paper-title-name">The Dawn of GUI Agent:</span><span class="paper-title-subtitle">A Preliminary Case Study with Claude 3.5 Computer Use  </span></heading><br />
-              <span class="author-line"><span class="author-names-full">Siyuan Hu, <span class="author-highlight">Mingyu Ouyang</span>, Difei Gao, Mike Zheng Shou<sup class="author-marker" title="Corresponding author">†</sup></span><span class="author-names-short"><span class="nowrap">S. Hu</span>, <span class="nowrap"><span class="author-highlight">M. Ouyang</span></span>, <span class="nowrap">D. Gao</span>, <span class="nowrap">M. Z. Shou<sup class="author-marker" title="Corresponding author">†</sup></span></span></span><br />
+            <div class="publication-header">
+              <h3 class="paper-title paper-title-split"><span class="paper-title-name">The Dawn of GUI Agent:</span><span class="paper-title-subtitle">A Preliminary Case Study with Claude 3.5 Computer Use  </span></h3>
+              <span class="author-line"><span class="author-names-full">Siyuan Hu, <span class="author-highlight">Mingyu Ouyang</span>, Difei Gao, Mike Zheng Shou<sup class="author-marker" title="Corresponding author">†</sup></span><span class="author-names-short"><span class="nowrap">S. Hu</span>, <span class="nowrap"><span class="author-highlight">M. Ouyang</span></span>, <span class="nowrap">D. Gao</span>, <span class="nowrap">M. Z. Shou<sup class="author-marker" title="Corresponding author">†</sup></span></span></span>
               <span class="paper-meta">Technical Report 2024, <span class="award-note award-note--inline">GitHub 2k stars</span></span>
-            </p>
+            </div>
             <p class="paper-links"><span class="paper-link"><a href="https://arxiv.org/abs/2411.10323" target="_blank" rel="noopener noreferrer">📃 paper</a> <span aria-hidden="true">|</span></span>
               <span class="paper-link"><a href="https://computer-use-ootb.github.io" target="_blank" rel="noopener noreferrer">🌐 project page</a> <span aria-hidden="true">|</span></span>
               <span class="paper-link"><a href="https://github.com/showlab/computer_use_ootb" target="_blank" rel="noopener noreferrer">🏠 github</a></span></p>
@@ -268,16 +318,17 @@
             <a class="paper-thumb paper-thumb--image" href="https://showlab.github.io/assistgui/" target="_blank" rel="noopener noreferrer" aria-label="View the AssistGUI project page">
               <picture class="paper-thumb-picture">
                 <source media="(prefers-reduced-motion: reduce)" srcset="assets/img/projects/assistgui-teaser.jpg" />
-                <img class="paper-thumb-image" width="640" height="360" loading="lazy" decoding="async" src="assets/img/projects/assistgui-demo.gif" alt="AssistGUI demo placing text behind a person in Adobe After Effects" />
+                <img class="paper-thumb-image" width="640" height="360" loading="lazy" decoding="async" src="assets/img/projects/assistgui-demo-preview.jpg?v=4b6a79e9bec4" alt="AssistGUI demo placing text behind a person in Adobe After Effects" />
               </picture>
+              <video class="paper-thumb-video" width="640" height="360" autoplay loop muted playsinline preload="none" data-src="assets/video/previews/assistgui-demo.mp4?v=be54d6dd311f" aria-hidden="true" tabindex="-1" hidden></video>
             </a>
           </td>
           <td width="72%">
-            <p>
-              <heading role="heading" aria-level="3">AssistGUI: Task-Oriented PC Graphical User Interface Automation</heading><br />
-              <span class="author-line"><span class="author-names-full">Difei Gao, Lei Ji, Zechen Bai, <span class="author-highlight">Mingyu Ouyang</span>, Peiran Li, Dongxing Mao, Qinchen Wu, Weichen Zhang, Peiyi Wang, Xiangwu Guo, Hengxu Wang, Luowei Zhou, Mike Zheng Shou<sup class="author-marker" title="Corresponding author">†</sup></span><span class="author-names-short"><span class="nowrap">D. Gao</span>, <span class="nowrap">L. Ji</span>, <span class="nowrap">Z. Bai</span>, <span class="nowrap"><span class="author-highlight">M. Ouyang</span></span>, <span class="nowrap">P. Li</span>, <span class="nowrap">D. Mao</span>, <span class="nowrap">Q. Wu</span>, <span class="nowrap">W. Zhang</span>, <span class="nowrap">P. Wang</span>, <span class="nowrap">X. Guo</span>, <span class="nowrap">H. Wang</span>, <span class="nowrap">L. Zhou</span>, <span class="nowrap">M. Z. Shou<sup class="author-marker" title="Corresponding author">†</sup></span></span></span><br />
+            <div class="publication-header">
+              <h3 class="paper-title">AssistGUI: Task-Oriented PC Graphical User Interface Automation</h3>
+              <span class="author-line"><span class="author-names-full">Difei Gao, Lei Ji, Zechen Bai, <span class="author-highlight">Mingyu Ouyang</span>, Peiran Li, Dongxing Mao, Qinchen Wu, Weichen Zhang, Peiyi Wang, Xiangwu Guo, Hengxu Wang, Luowei Zhou, Mike Zheng Shou<sup class="author-marker" title="Corresponding author">†</sup></span><span class="author-names-short"><span class="nowrap">D. Gao</span>, <span class="nowrap">L. Ji</span>, <span class="nowrap">Z. Bai</span>, <span class="nowrap"><span class="author-highlight">M. Ouyang</span></span>, <span class="nowrap">P. Li</span>, <span class="nowrap">D. Mao</span>, <span class="nowrap">Q. Wu</span>, <span class="nowrap">W. Zhang</span>, <span class="nowrap">P. Wang</span>, <span class="nowrap">X. Guo</span>, <span class="nowrap">H. Wang</span>, <span class="nowrap">L. Zhou</span>, <span class="nowrap">M. Z. Shou<sup class="author-marker" title="Corresponding author">†</sup></span></span></span>
               <span class="paper-meta"><span class="paper-venue"><span class="nowrap">CVPR 2024</span></span></span>
-            </p>
+            </div>
             <p class="paper-links"><span class="paper-link"><a href="https://openaccess.thecvf.com/content/CVPR2024/html/Gao_AssistGUI_Task-Oriented_PC_Graphical_User_Interface_Automation_CVPR_2024_paper.html" target="_blank" rel="noopener noreferrer">📃 paper</a> <span aria-hidden="true">|</span></span>
               <span class="paper-link"><a href="https://showlab.github.io/assistgui/" target="_blank" rel="noopener noreferrer">🌐 project page</a></span></p>
             <p class="paper-summary">A desktop GUI agent framework for task decomposition, GUI parsing, action generation, and reflection.</p>
@@ -288,19 +339,20 @@
             <a class="paper-thumb paper-thumb--image" href="https://doi.org/10.1109/TIP.2024.3403054" target="_blank" rel="noopener noreferrer" aria-label="Read the DCTransformer paper">
               <picture class="paper-thumb-picture">
                 <source media="(prefers-reduced-motion: reduce)" srcset="assets/img/projects/dctransformer-teaser.jpg" />
-                <img class="paper-thumb-image" width="640" height="360" loading="lazy" decoding="async" src="assets/img/projects/dctransformer-recovery.gif" alt="DCTransformer comparison showing a compressed JPEG and the recovered high-quality image" />
+                <img class="paper-thumb-image" width="640" height="360" loading="lazy" decoding="async" src="assets/img/projects/dctransformer-recovery-preview.jpg?v=5091c3e0c6e8" alt="DCTransformer comparison showing a compressed JPEG and the recovered high-quality image" />
               </picture>
+              <video class="paper-thumb-video" width="640" height="360" autoplay loop muted playsinline preload="none" data-src="assets/video/previews/dctransformer-recovery.mp4?v=4b5ad3894995" aria-hidden="true" tabindex="-1" hidden></video>
             </a>
           </td>
           <td width="72%">
-            <p>
-              <heading role="heading" aria-level="3">JPEG Quantized Coefficient Recovery via DCT Domain Spatial-Frequential Transformer</heading><br />
-              <span class="author-line"><span class="author-names-full"><span class="author-highlight">Mingyu Ouyang</span>, Zhenzhong Chen<sup class="author-marker" title="Corresponding author">†</sup></span><span class="author-names-short"><span class="nowrap"><span class="author-highlight">M. Ouyang</span></span>, <span class="nowrap">Z. Chen<sup class="author-marker" title="Corresponding author">†</sup></span></span></span><br />
+            <div class="publication-header">
+              <h3 class="paper-title">JPEG Quantized Coefficient Recovery via DCT Domain Spatial-Frequential Transformer</h3>
+              <span class="author-line"><span class="author-names-full"><span class="author-highlight">Mingyu Ouyang</span>, Zhenzhong Chen<sup class="author-marker" title="Corresponding author">†</sup></span><span class="author-names-short"><span class="nowrap"><span class="author-highlight">M. Ouyang</span></span>, <span class="nowrap">Z. Chen<sup class="author-marker" title="Corresponding author">†</sup></span></span></span>
               <span class="paper-meta"><span class="paper-venue">IEEE TIP 2024</span></span>
-            </p>
+            </div>
             <p class="paper-links"><span class="paper-link"><a href="https://doi.org/10.1109/TIP.2024.3403054" target="_blank" rel="noopener noreferrer">📃 paper</a> <span aria-hidden="true">|</span></span>
               <span class="paper-link"><a href="https://github.com/yyyang404/DCT-JPEG-Artifact-Removal" target="_blank" rel="noopener noreferrer">🏠 github</a></span></p>
-            <p class="paper-summary">Recovers JEPG-quantized DCT coefficients with spatial-frequency modeling.</p>
+            <p class="paper-summary">Recovers JPEG-quantized DCT coefficients with spatial-frequency modeling.</p>
           </td>
         </tr>
       </table>
@@ -309,7 +361,7 @@
 
       <table class="full-table section-heading" cellspacing="0" cellpadding="0" id="education">
         <tr>
-          <td><sectionheading role="heading" aria-level="2">Education</sectionheading></td>
+          <td><h2 class="section-title">Education</h2></td>
         </tr>
       </table>
       <table class="full-table detail-grid section-content" cellspacing="0" cellpadding="0">
@@ -331,13 +383,13 @@
 
       <table class="full-table section-heading" cellspacing="0" cellpadding="0" id="experience">
         <tr>
-          <td><sectionheading role="heading" aria-level="2">Experiences</sectionheading></td>
+          <td><h2 class="section-title">Experiences</h2></td>
         </tr>
       </table>
       <table class="full-table detail-grid section-content" cellspacing="0" cellpadding="0">
         <tr class="detail-item">
           <td width="28%"><span class="entry-date">2026</span></td>
-          <td class="detail-copy"><span class="detail-title">ARC Lab, Tencent IEG</span><br />Research Intern (Project Up talent program)</td>
+          <td class="detail-copy"><span class="detail-title">ARC Lab, Tencent</span><br />Research Intern (Project Up)</td>
         </tr>
         <tr class="detail-item">
           <td width="28%"><span class="entry-date">2025</span></td>
@@ -349,22 +401,44 @@
         </tr>
         <tr class="detail-item">
           <td width="28%"><span class="entry-date">2022</span></td>
-          <td class="detail-copy"><span class="detail-title">Tencent Map</span><br />Algorithm Dev Intern</td>
+          <td class="detail-copy"><span class="detail-title">Tencent Map</span><br />MLE Intern</td>
         </tr>
       </table>
 
       <hr />
 
+      <!-- <table class="full-table section-heading" cellspacing="0" cellpadding="0" id="awards">
+        <tr>
+          <td><h2 class="section-title">Honors &amp; Awards</h2></td>
+        </tr>
+      </table>
+      <table class="full-table detail-grid section-content" cellspacing="0" cellpadding="0">
+        <tr class="detail-item">
+          <td width="28%"><span class="entry-date">2026</span></td>
+          <td class="detail-copy"><span class="detail-title">Best Paper Runner-Up Award</span><br />Multimodal Digital Agents (MDA) Workshop @ ECCV 2026</td>
+        </tr>
+        <tr class="detail-item">
+          <td width="28%"><span class="entry-date">2026</span></td>
+          <td class="detail-copy"><span class="detail-title">Research Achievement Award</span><br />School of Computing, National University of Singapore</td>
+        </tr>
+        <tr class="detail-item">
+          <td width="28%"><span class="entry-date">2026</span></td>
+          <td class="detail-copy"><span class="detail-title">Compute Transparency Champion Award</span><br />CVPR 2026</td>
+        </tr>
+      </table>
+
+      <hr /> -->
+
       <table class="full-table section-heading" cellspacing="0" cellpadding="0" id="misc">
         <tr>
-          <td><sectionheading role="heading" aria-level="2">Miscellaneous</sectionheading></td>
+          <td><h2 class="section-title">Miscellaneous</h2></td>
         </tr>
       </table>
       <table class="full-table section-content" cellspacing="0" cellpadding="0">
         <tr>
           <td>
             <ul class="bullet-list">
-                <li>I enjoy football games (Visca Barça! 💙❤️). I played for and served as the captain of the Wuhan University football team, where we won the championship at the 16th Hubei Province Games in 2022.  <a class="nowrap" href="https://artihove.co.uk/cruyff-fcbarcelona" target="_blank" rel="noopener noreferrer"><i>"Salid y disfrutad."</i></a></li>
+                <li>I enjoy football games (Visca Barça! 💙❤️). I served as the captain of the Wuhan University football team, where we won the championship at the 16th Hubei Province Games in 2022.  <a class="nowrap" href="https://artihove.co.uk/cruyff-fcbarcelona" target="_blank" rel="noopener noreferrer"><i>"Salid y disfrutad."</i></a></li>
                 <li>I use Codex <a href="tokens/">a lot</a>.</li>
               </ul>
           </td>
